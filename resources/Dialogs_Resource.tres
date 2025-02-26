@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="Dialogs_Resource" load_steps=2 format=3 uid="uid://4aeg2vqofplf"]
+
+[ext_resource type="Script" path="res://resources/scripts/dialogs_resource.gd" id="1_07w6i"]
+
+[resource]
+script = ExtResource("1_07w6i")
+progress_friend_intro_dialogs = ["[color=202020]Loading...", "[color=blue]O... O... Oi!", "[color=blue]Finalmente voltei a progredir, Bem vindo!", "[color=blue]Aqui é o inicio de tudo, só você e eu por enquanto...", "[color=blue]Pode deixa que vou te ajudar!", "[color=blue]Sou só um pouco lento, como poder ver...", "[color=blue]Primeiro provalvemente você deve ta se perguntando...", "[color=blue]Quem é essa barrinha misteriosa carregando para mim?", "[color=blue]E eu te respondo...", "[color=blue]Sou seu mais novo amigo, progress friend!", "[color=blue]Na verdade eu sou mais do que seu melhor amigo...", "[color=blue]Sou o que vai te fazer ganha pontos!", "[color=red]EU SEI QUE ISSO PARECE UM POUCO CLICHE", "[color=blue]Mas é o que posso fazer por ti agora,ok?", "[color=blue]Agora vou descansar um pouco...", "[color=blue]Ou você acha que sou feito de ferro?"]
+progress_friend_idle_dialogs = ["[color=blue]Zzzzz..."]

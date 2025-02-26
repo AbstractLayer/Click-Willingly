@@ -1,0 +1,428 @@
+[gd_scene load_steps=26 format=3 uid="uid://xgx2ub3vhj15"]
+
+[ext_resource type="Script" path="res://scenes/games_nodes/arbitrary_dino/scripts/character_body_2d.gd" id="1_7qmpd"]
+[ext_resource type="Script" path="res://scenes/games_nodes/arbitrary_dino/scripts/arbitrary_dino.gd" id="1_7val3"]
+[ext_resource type="Texture2D" uid="uid://xd62nkgtp7uv" path="res://assets/textures/dino/dino.png" id="2_tcu25"]
+[ext_resource type="Texture2D" uid="uid://dsvbc6dtu3rvw" path="res://assets/textures/dino/path.png" id="3_ifuw5"]
+[ext_resource type="Texture2D" uid="uid://w2co34ffq734" path="res://assets/textures/dino/background.png" id="4_i1mmn"]
+[ext_resource type="Texture2D" uid="uid://chiwf6ka1cuip" path="res://assets/textures/dino/space.png" id="6_fcxly"]
+[ext_resource type="Script" path="res://scenes/games_nodes/arbitrary_dino/scripts/main_control_node.gd" id="7_4xqdn"]
+[ext_resource type="Texture2D" uid="uid://biub8ppxr3om7" path="res://assets/textures/dino/finish.png" id="7_tf363"]
+[ext_resource type="FontFile" uid="uid://cpamktgjeyxlk" path="res://assets/styles/fonts/bagel.ttf" id="9_ylcph"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_38kga"]
+size = Vector2(21, 43)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dfxs6"]
+size = Vector2(20, 380.9)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3jo8s"]
+size = Vector2(980, 20)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mn1k6"]
+size = Vector2(980, 20)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ival6"]
+bg_color = Color(0.05, 0.05, 0.05, 0.882353)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_y7xtk"]
+bg_color = Color(0.0666667, 0.109804, 0.0941176, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+anti_aliasing = false
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kdwfx"]
+bg_color = Color(0.05, 0.05, 0.05, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_waj44"]
+bg_color = Color(0.0666667, 0.109804, 0.0941176, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+anti_aliasing = false
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3aubx"]
+bg_color = Color(0.0666667, 0.109804, 0.0941176, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+anti_aliasing = false
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_i4v1w"]
+bg_color = Color(0.0666667, 0.109804, 0.0941176, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+anti_aliasing = false
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kplvq"]
+bg_color = Color(0.0666667, 0.109804, 0.0941176, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+anti_aliasing = false
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tabbr"]
+bg_color = Color(0.0666667, 0.109804, 0.0941176, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+anti_aliasing = false
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_700qw"]
+bg_color = Color(0.0666667, 0.109804, 0.0941176, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+anti_aliasing = false
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_p313m"]
+bg_color = Color(0.0666667, 0.109804, 0.0941176, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+anti_aliasing = false
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0xua3"]
+bg_color = Color(0.0666667, 0.109804, 0.0941176, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+anti_aliasing = false
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8axps"]
+bg_color = Color(0.0666667, 0.109804, 0.0941176, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+anti_aliasing = false
+
+[node name="ArbitraryDinoMainNode" type="Node2D"]
+metadata/_edit_vertical_guides_ = [965.0]
+
+[node name="DinoGameItself" type="Node2D" parent="."]
+unique_name_in_owner = true
+script = ExtResource("1_7val3")
+
+[node name="Sprite2D" type="Sprite2D" parent="DinoGameItself"]
+position = Vector2(325, 85)
+scale = Vector2(3, 3)
+texture = ExtResource("6_fcxly")
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="DinoGameItself"]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="DinoGameItself/ParallaxBackground"]
+motion_mirroring = Vector2(1000, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="DinoGameItself/ParallaxBackground/ParallaxLayer"]
+texture = ExtResource("4_i1mmn")
+centered = false
+
+[node name="Dino_Character" type="CharacterBody2D" parent="DinoGameItself"]
+unique_name_in_owner = true
+position = Vector2(73, 204.8)
+collision_mask = 6
+script = ExtResource("1_7qmpd")
+
+[node name="Sprite2D" type="Sprite2D" parent="DinoGameItself/Dino_Character"]
+texture = ExtResource("2_tcu25")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DinoGameItself/Dino_Character"]
+position = Vector2(5.5, 3.5)
+shape = SubResource("RectangleShape2D_38kga")
+
+[node name="Camera2D" type="Camera2D" parent="DinoGameItself/Dino_Character"]
+offset = Vector2(-73, -204)
+anchor_mode = 0
+limit_top = 205
+editor_draw_limits = true
+
+[node name="QueuefreeLakes" type="Area2D" parent="DinoGameItself/Dino_Character" groups=["queuefreelakes"]]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DinoGameItself/Dino_Character/QueuefreeLakes"]
+position = Vector2(-103, 62.65)
+shape = SubResource("RectangleShape2D_dfxs6")
+
+[node name="FirstPath" type="StaticBody2D" parent="DinoGameItself"]
+unique_name_in_owner = true
+collision_layer = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DinoGameItself/FirstPath"]
+position = Vector2(490, 240)
+shape = SubResource("RectangleShape2D_3jo8s")
+
+[node name="Sprite2D" type="Sprite2D" parent="DinoGameItself/FirstPath"]
+texture_repeat = 2
+position = Vector2(0, 230)
+texture = ExtResource("3_ifuw5")
+centered = false
+region_enabled = true
+region_rect = Rect2(0, 0, 980, 20)
+
+[node name="SecondPath" type="StaticBody2D" parent="DinoGameItself"]
+unique_name_in_owner = true
+position = Vector2(981, 0)
+collision_layer = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DinoGameItself/SecondPath"]
+position = Vector2(489, 240)
+shape = SubResource("RectangleShape2D_mn1k6")
+
+[node name="Sprite2D" type="Sprite2D" parent="DinoGameItself/SecondPath"]
+texture_repeat = 2
+position = Vector2(-1, 230)
+texture = ExtResource("3_ifuw5")
+centered = false
+region_enabled = true
+region_rect = Rect2(0, 0, 980, 20)
+
+[node name="VariableJump" type="Timer" parent="DinoGameItself"]
+unique_name_in_owner = true
+wait_time = 0.15
+
+[node name="DifficultTimer" type="Timer" parent="DinoGameItself"]
+unique_name_in_owner = true
+wait_time = 2.0
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="MainControlNode" type="Control" parent="CanvasLayer"]
+layout_mode = 3
+anchor_right = 3.896
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("7_4xqdn")
+
+[node name="DinoScore" type="Label" parent="CanvasLayer/MainControlNode"]
+unique_name_in_owner = true
+layout_mode = 1
+offset_left = 15.0
+offset_top = 10.0
+offset_right = 76.0
+offset_bottom = 33.0
+theme_override_fonts/font = ExtResource("9_ylcph")
+theme_override_font_sizes/font_size = 32
+text = "Score: 0"
+
+[node name="DinoMenu" type="Panel" parent="CanvasLayer/MainControlNode"]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_ival6")
+
+[node name="Dino" type="TextureRect" parent="CanvasLayer/MainControlNode/DinoMenu"]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 9
+anchor_bottom = 1.0
+offset_left = 341.0
+offset_top = 60.0
+offset_right = 405.0
+offset_bottom = -126.0
+grow_vertical = 2
+pivot_offset = Vector2(35, 36)
+texture = ExtResource("2_tcu25")
+
+[node name="Bandeira" type="TextureRect" parent="CanvasLayer/MainControlNode/DinoMenu"]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 9
+anchor_bottom = 1.0
+offset_left = 570.0
+offset_top = 59.0
+offset_right = 634.175
+offset_bottom = -121.0
+grow_vertical = 2
+texture = ExtResource("7_tf363")
+expand_mode = 4
+stretch_mode = 3
+
+[node name="Label" type="Label" parent="CanvasLayer/MainControlNode/DinoMenu"]
+layout_mode = 1
+anchors_preset = -1
+anchor_bottom = 1.0
+offset_left = 416.0
+offset_top = 86.0
+offset_right = 558.0
+offset_bottom = -141.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("9_ylcph")
+theme_override_font_sizes/font_size = 32
+text = "Arbitrary Dino"
+metadata/_edit_use_anchors_ = true
+
+[node name="StartRemovePoints" type="Label" parent="CanvasLayer/MainControlNode/DinoMenu"]
+unique_name_in_owner = true
+visible = false
+layout_mode = 1
+anchors_preset = -1
+anchor_bottom = 1.0
+offset_left = 401.5
+offset_top = 127.0
+offset_right = 572.5
+offset_bottom = -100.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("9_ylcph")
+theme_override_font_sizes/font_size = 32
+text = "Cost: 1000 Points"
+metadata/_edit_use_anchors_ = true
+
+[node name="Button" type="Button" parent="CanvasLayer/MainControlNode/DinoMenu"]
+layout_mode = 1
+anchors_preset = -1
+anchor_bottom = 1.0
+offset_left = 457.0
+offset_top = 159.0
+offset_right = 517.0
+offset_bottom = -60.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.3174, 0.39813, 0.69, 1)
+theme_override_fonts/font = ExtResource("9_ylcph")
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = SubResource("StyleBoxFlat_y7xtk")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxFlat_y7xtk")
+theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_y7xtk")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxFlat_y7xtk")
+theme_override_styles/hover = SubResource("StyleBoxFlat_y7xtk")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxFlat_y7xtk")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_y7xtk")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxFlat_y7xtk")
+theme_override_styles/normal = SubResource("StyleBoxFlat_y7xtk")
+text = "Start"
+metadata/_edit_use_anchors_ = true
+
+[node name="DinoGameOver" type="Panel" parent="CanvasLayer/MainControlNode"]
+unique_name_in_owner = true
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_kdwfx")
+
+[node name="GameOverLabel" type="Label" parent="CanvasLayer/MainControlNode/DinoGameOver"]
+layout_mode = 1
+anchors_preset = -1
+anchor_bottom = 1.0
+offset_left = 444.5
+offset_top = 86.0
+offset_right = 529.5
+offset_bottom = -141.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("9_ylcph")
+theme_override_font_sizes/font_size = 32
+text = "Game over"
+metadata/_edit_use_anchors_ = true
+
+[node name="PointsRewardLabel" type="Label" parent="CanvasLayer/MainControlNode/DinoGameOver"]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.014
+anchor_bottom = 1.014
+offset_left = 444.5
+offset_top = 113.5
+offset_right = 529.5
+offset_bottom = -113.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("9_ylcph")
+theme_override_font_sizes/font_size = 32
+text = "dsadasd"
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="ReturnMenuButton" type="Button" parent="CanvasLayer/MainControlNode/DinoGameOver"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.0164271
+anchor_right = 0.0184805
+anchor_bottom = 1.0
+offset_left = 426.0
+offset_top = 148.0
+offset_right = 553.0
+offset_bottom = -71.0
+theme_override_fonts/font = ExtResource("9_ylcph")
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = SubResource("StyleBoxFlat_waj44")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxFlat_3aubx")
+theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_i4v1w")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxFlat_kplvq")
+theme_override_styles/hover = SubResource("StyleBoxFlat_tabbr")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxFlat_700qw")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_p313m")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxFlat_0xua3")
+theme_override_styles/normal = SubResource("StyleBoxFlat_8axps")
+text = "Back to menu"
+metadata/_edit_use_anchors_ = true
+
+[connection signal="is_physics_return" from="DinoGameItself" to="DinoGameItself/Dino_Character" method="_on_dino_game_itself_is_physics_return"]
+[connection signal="speedup_character" from="DinoGameItself" to="DinoGameItself/Dino_Character" method="_on_dino_game_itself_speedup_character"]
+[connection signal="timeout" from="DinoGameItself/VariableJump" to="DinoGameItself/Dino_Character" method="_on_variable_jump_timeout"]
+[connection signal="timeout" from="DinoGameItself/DifficultTimer" to="DinoGameItself" method="_on_difficult_timer_timeout"]
+[connection signal="reset_game" from="CanvasLayer/MainControlNode" to="DinoGameItself" method="_on_main_control_node_reset_game"]
+[connection signal="pressed" from="CanvasLayer/MainControlNode/DinoMenu/Button" to="CanvasLayer/MainControlNode" method="_on_button_pressed"]
+[connection signal="pressed" from="CanvasLayer/MainControlNode/DinoGameOver/ReturnMenuButton" to="CanvasLayer/MainControlNode" method="_on_return_menu_button_pressed"]

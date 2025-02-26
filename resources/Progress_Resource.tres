@@ -1,0 +1,35 @@
+[gd_resource type="Resource" script_class="Progress_Resource" load_steps=2 format=3 uid="uid://rwixuxui4cba"]
+
+[ext_resource type="Script" path="res://resources/scripts/progress_resource.gd" id="1_haqrr"]
+
+[resource]
+script = ExtResource("1_haqrr")
+name = ""
+race = ""
+classes = ""
+stats = Array[String]([])
+character_atributes = {
+"Exp": 0,
+"Exp_Max": 250,
+"Gold": 0,
+"Health": 0,
+"Level": 0,
+"Mana": 0,
+"Max_Health": 0,
+"Max_Mana": 0
+}
+context = 0
+equipament = Array[String]([])
+inventory = Array[String]([])
+quests = Array[String]([])
+skills = Array[String]([])
+enemies_titles = Array[String](["Sr.", "Sra."])
+enemies_impressive_titles = Array[String](["Lorde", "Rei"])
+kill_variants = Array[String](["Executando", "Matando", "Estrangulando", "Assasinando"])
+cruz_equipaments = Array[String](["soquete monstro"])
+cruz_spells = Array[String](["fogo pelado"])
+cruz_enemies = Array[String](["orc maldoso", "peidozil"])
+cruz_enemies_loot = Array[String](["perna do orc"])
+cruz_places = Array[String](["hall principal", "beco sem saida", "beco com saida"])
+cruz_sell_places = Array[String](["comedor de abraçadeiras"])
+cruz_secret = Array[String](["olha pro ceu"])

@@ -1,0 +1,40 @@
+[remap]
+
+importer="font_data_dynamic"
+type="FontFile"
+uid="uid://c85rxj6j18qfa"
+path="res://.godot/imported/Tahoma.ttf-e5d7810947d89b5ea8031df903743a9e.fontdata"
+
+[deps]
+
+source_file="res://assets/styles/fonts/Tahoma.ttf"
+dest_files=["res://.godot/imported/Tahoma.ttf-e5d7810947d89b5ea8031df903743a9e.fontdata"]
+
+[params]
+
+Rendering=null
+antialiasing=2
+generate_mipmaps=false
+disable_embedded_bitmaps=false
+multichannel_signed_distance_field=true
+msdf_pixel_range=4
+msdf_size=64
+allow_system_fallback=false
+force_autohinter=false
+hinting=2
+subpixel_positioning=1
+oversampling=10.0
+Fallbacks=null
+fallbacks=[]
+Compress=null
+compress=true
+preload=[{
+"chars": [],
+"glyphs": [],
+"name": "New Configuration",
+"size": Vector2i(16, 0),
+"variation_embolden": 0.0
+}]
+language_support={}
+script_support={}
+opentype_features={}

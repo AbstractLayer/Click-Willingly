@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Store_Resource" load_steps=2 format=3 uid="uid://cenymfxr0hqgy"]
+
+[ext_resource type="Script" path="res://resources/scripts/store_resource.gd" id="1_og8t6"]
+
+[resource]
+script = ExtResource("1_og8t6")
+store_purchased_quantity = 0
+store_debit = 0
+progress_friend_quantity = 0
+progress_friend_value = 0
+progress_friend_add_value = 0

@@ -1,0 +1,7 @@
+[gd_resource type="LabelSettings" load_steps=2 format=3 uid="uid://bmamm3uys6c84"]
+
+[ext_resource type="FontFile" uid="uid://c85rxj6j18qfa" path="res://assets/styles/fonts/Tahoma.ttf" id="1_2camw"]
+
+[resource]
+font = ExtResource("1_2camw")
+font_color = Color(0, 0, 0, 1)

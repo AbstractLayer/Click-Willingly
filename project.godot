@@ -1,0 +1,97 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="Click Willingly"
+config/version="004Alpha"
+config/tags=PackedStringArray("2d", "clicker", "prototype", "wip")
+run/main_scene="res://scenes/main_windows/primary_window/primary_window.tscn"
+config/features=PackedStringArray("4.3", "GL Compatibility")
+boot_splash/bg_color=Color(0, 0, 0, 0)
+boot_splash/show_image=false
+boot_splash/fullsize=false
+boot_splash/use_filter=false
+config/icon="res://assets/textures/icon/icon.png"
+config/windows_native_icon="res://assets/textures/icon/icon.ico"
+
+[audio]
+
+buses/default_bus_layout="res://assets/sounds/default_bus/default_bus_layout.tres"
+
+[autoload]
+
+Global="*res://global/Global.gd"
+
+[display]
+
+window/size/viewport_width=250
+window/size/viewport_height=250
+window/size/initial_position_type=0
+window/size/initial_position=Vector2i(30, 100)
+window/size/resizable=false
+window/size/borderless=true
+window/size/always_on_top=true
+window/energy_saving/keep_screen_on=false
+window/subwindows/embed_subwindows=false
+mouse_cursor/custom_image="res://assets/textures/cursor/main_cursor.png"
+mouse_cursor/custom_image_hotspot=Vector2(10, 10)
+
+[file_customization]
+
+folder_colors={
+"res://assets/": "purple",
+"res://assets/shaders/": "pink",
+"res://assets/sounds/": "teal",
+"res://assets/styles/": "green",
+"res://assets/textures/": "yellow",
+"res://global/": "orange",
+"res://plugins/": "teal",
+"res://resources/": "yellow",
+"res://scenes/": "red"
+}
+
+[global_group]
+
+queuefreelakes=""
+
+[gui]
+
+theme/default_font_multichannel_signed_distance_field=true
+
+[input]
+
+ui_accept={
+"deadzone": 0.5,
+"events": []
+}
+ui_select={
+"deadzone": 0.5,
+"events": []
+}
+Left_Button={
+"deadzone": 0.5,
+"events": [Object(InputEventMouseButton,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"button_mask":0,"position":Vector2(0, 0),"global_position":Vector2(0, 0),"factor":1.0,"button_index":1,"canceled":false,"pressed":false,"double_click":false,"script":null)
+]
+}
+Space={
+"deadzone": 0.5,
+"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":32,"key_label":0,"unicode":32,"location":0,"echo":false,"script":null)
+]
+}
+
+[rendering]
+
+textures/canvas_textures/default_texture_filter=0
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
+viewport/transparent_background=true
+2d/snap/snap_2d_transforms_to_pixel=true
+2d/snap/snap_2d_vertices_to_pixel=true

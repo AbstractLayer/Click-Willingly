@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Clicker_Resource" load_steps=2 format=3 uid="uid://bu714xue37hr1"]
+
+[ext_resource type="Script" path="res://resources/scripts/clicker_resource.gd" id="1_xe375"]
+
+[resource]
+script = ExtResource("1_xe375")
+clicks = 0
+clicks_modify = 0
+clicks_result = 0
+clicks_addiction = 0
+clicks_subtraction = 0
+clicks_multiply = 0
+clicks_division = 0

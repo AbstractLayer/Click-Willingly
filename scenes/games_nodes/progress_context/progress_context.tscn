@@ -1,0 +1,2506 @@
+[gd_scene load_steps=77 format=3 uid="uid://dtsitrbwpjd08"]
+
+[ext_resource type="Script" path="res://scenes/games_nodes/progress_context/start/prog_con_start_game.gd" id="1_w2bxp"]
+[ext_resource type="FontFile" uid="uid://c85rxj6j18qfa" path="res://assets/styles/fonts/Tahoma.ttf" id="2_lchmn"]
+[ext_resource type="Texture2D" uid="uid://5lwfl4rkrhu4" path="res://assets/textures/progress_context/style_test2.png" id="3_5ur0u"]
+[ext_resource type="Texture2D" uid="uid://dh773q3wkyfpt" path="res://assets/textures/progress_context/checkbox_checked.png" id="4_f8r04"]
+[ext_resource type="Texture2D" uid="uid://d0ndbdi2gtn7k" path="res://assets/textures/progress_context/checkbox_unchecked.png" id="5_ehoca"]
+[ext_resource type="ButtonGroup" uid="uid://d1jcl8w1nt1la" path="res://resources/button_groups/Race_Group_Button.tres" id="5_g1hc7"]
+[ext_resource type="ButtonGroup" uid="uid://cxokje2s7nq2i" path="res://resources/button_groups/Class_Group_Button.tres" id="6_ntf4j"]
+[ext_resource type="LabelSettings" uid="uid://bmamm3uys6c84" path="res://assets/styles/themes/progress_context_font.tres" id="6_ted0d"]
+[ext_resource type="StyleBox" uid="uid://dnmy5wwuytrp4" path="res://assets/styles/themes/progress_context_panels.tres" id="7_i8vre"]
+[ext_resource type="Script" path="res://scenes/games_nodes/progress_context/gameitself/prog_con_gameitself.gd" id="8_qna6g"]
+[ext_resource type="Texture2D" uid="uid://quafdl81vmp6" path="res://assets/textures/progress_context/style_test.png" id="9_5jdnw"]
+[ext_resource type="StyleBox" uid="uid://c4g4l6yt34tn8" path="res://assets/styles/themes/styleboxtexturestats.tres" id="10_a4j3n"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_daqld"]
+bg_color = Color(0.941176, 0.941176, 0.941176, 1)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_0ip61"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_oa0yb"]
+texture = ExtResource("3_5ur0u")
+texture_margin_left = 3.0
+texture_margin_top = 2.0
+texture_margin_right = 3.0
+texture_margin_bottom = 2.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_j8737"]
+content_margin_left = 1.0
+bg_color = Color(1, 1, 1, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_chmqm"]
+bg_color = Color(0.941176, 0.941176, 0.941176, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.627451, 0.627451, 0.627451, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lvm8b"]
+bg_color = Color(0.941176, 0.941176, 0.941176, 1)
+expand_margin_left = 1.0
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_odv1m"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mq8sf"]
+bg_color = Color(0.941176, 0.941176, 0.941176, 1)
+expand_margin_left = 1.0
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_70iio"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_mtk48"]
+texture = ExtResource("9_5jdnw")
+texture_margin_left = 6.0
+texture_margin_top = 2.0
+texture_margin_right = 4.0
+texture_margin_bottom = 2.0
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_uaxme"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_khyru"]
+bg_color = Color(0.941176, 0.941176, 0.941176, 1)
+expand_margin_left = 1.0
+anti_aliasing = false
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_kh7ek"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_d4eq7"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ronv8"]
+texture = ExtResource("9_5jdnw")
+texture_margin_left = 2.0
+texture_margin_top = 2.0
+texture_margin_right = 2.0
+texture_margin_bottom = 2.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_f1vow"]
+texture = ExtResource("9_5jdnw")
+texture_margin_left = 3.0
+texture_margin_top = 3.0
+texture_margin_right = 3.0
+texture_margin_bottom = 2.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_sd2cc"]
+bg_color = Color(0.75, 0.75, 0.75, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.627451, 0.627451, 0.627451, 1)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_0f4ec"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_levkx"]
+bg_color = Color(0.941176, 0.941176, 0.941176, 1)
+expand_margin_left = 1.0
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_fwdfh"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_csr7l"]
+content_margin_left = 3.0
+content_margin_right = 3.0
+bg_color = Color(0.941176, 0.941176, 0.941176, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_color = Color(0.776471, 0.792157, 0.796078, 1)
+corner_radius_top_left = 1
+corner_radius_top_right = 1
+corner_detail = 1
+anti_aliasing = false
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ymvgw"]
+bg_color = Color(0.941176, 0.941176, 0.941176, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_blend = true
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_x3etb"]
+bg_color = Color(0.941176, 0.941176, 0.941176, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_vkhc8"]
+content_margin_left = 6.0
+texture = ExtResource("9_5jdnw")
+texture_margin_left = 3.0
+texture_margin_top = 3.0
+texture_margin_right = 3.0
+texture_margin_bottom = 3.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ma7md"]
+content_margin_left = 6.0
+texture = ExtResource("9_5jdnw")
+texture_margin_left = 3.0
+texture_margin_top = 3.0
+texture_margin_right = 3.0
+texture_margin_bottom = 3.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ts8xi"]
+texture = ExtResource("3_5ur0u")
+texture_margin_left = 3.0
+texture_margin_top = 3.0
+texture_margin_right = 3.0
+texture_margin_bottom = 3.0
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_lb8d0"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_navi5"]
+bg_color = Color(0.941176, 0.941176, 0.941176, 1)
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.627451, 0.627451, 0.627451, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ab1r6"]
+bg_color = Color(1, 1, 1, 1)
+border_width_right = 1
+border_color = Color(0.627451, 0.627451, 0.627451, 1)
+expand_margin_bottom = 10.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_g0wn4"]
+bg_color = Color(1, 1, 1, 1)
+border_color = Color(0.890196, 0.890196, 0.890196, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_44qup"]
+bg_color = Color(0.941176, 0.941176, 0.941176, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.627451, 0.627451, 0.627451, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dfavp"]
+bg_color = Color(0.941176, 0.941176, 0.941176, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jolu2"]
+bg_color = Color(0, 0.470588, 0.843137, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_uc5dw"]
+font = ExtResource("2_lchmn")
+font_size = 12
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rskml"]
+bg_color = Color(0.890196, 0.890196, 0.890196, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_b3ajp"]
+bg_color = Color(1, 1, 1, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.627451, 0.627451, 0.627451, 1)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_4ag7w"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xaf6q"]
+bg_color = Color(0.941176, 0.941176, 0.941176, 1)
+border_width_bottom = 1
+border_color = Color(0.627451, 0.627451, 0.627451, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_onv0q"]
+bg_color = Color(1, 1, 1, 1)
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.627451, 0.627451, 0.627451, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_dqxwy"]
+font = ExtResource("2_lchmn")
+font_size = 18
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ic4ln"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xx240"]
+bg_color = Color(0.941176, 0.941176, 0.941176, 1)
+border_width_left = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.627451, 0.627451, 0.627451, 1)
+expand_margin_right = 1.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_x0j8l"]
+bg_color = Color(1, 1, 1, 1)
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.627451, 0.627451, 0.627451, 1)
+expand_margin_right = 1.0
+
+[sub_resource type="LabelSettings" id="LabelSettings_e777u"]
+font = ExtResource("2_lchmn")
+font_size = 18
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_guqpg"]
+bg_color = Color(1, 1, 1, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.627451, 0.627451, 0.627451, 1)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_lxudd"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qqocq"]
+bg_color = Color(0.941176, 0.941176, 0.941176, 1)
+border_width_left = 1
+border_width_bottom = 1
+border_color = Color(0.627451, 0.627451, 0.627451, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_uqkww"]
+font = ExtResource("2_lchmn")
+font_size = 15
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_oo46e"]
+bg_color = Color(1, 1, 1, 1)
+border_width_left = 1
+border_width_top = 1
+border_color = Color(0.627451, 0.627451, 0.627451, 1)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_wn7hc"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_25a0t"]
+bg_color = Color(0.941176, 0.941176, 0.941176, 1)
+border_width_left = 1
+border_width_bottom = 1
+border_color = Color(0.627451, 0.627451, 0.627451, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_ag5yh"]
+font = ExtResource("2_lchmn")
+font_size = 15
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bc0op"]
+bg_color = Color(1, 1, 1, 1)
+border_width_left = 1
+border_width_right = 1
+border_color = Color(0.627451, 0.627451, 0.627451, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ksp1t"]
+bg_color = Color(1, 1, 1, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.627451, 0.627451, 0.627451, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_sd8cg"]
+font = ExtResource("2_lchmn")
+font_size = 14
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ht5dw"]
+bg_color = Color(0.941176, 0.941176, 0.941176, 1)
+border_width_top = 1
+border_color = Color(0.627451, 0.627451, 0.627451, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_b5n0r"]
+bg_color = Color(0.941176, 0.941176, 0.941176, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jabc6"]
+bg_color = Color(0, 0.470588, 0.843137, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6ebls"]
+bg_color = Color(0.15, 0.15, 0.15, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2duvy"]
+bg_color = Color(1, 1, 1, 1)
+border_width_top = 1
+border_width_bottom = 1
+border_color = Color(0.627451, 0.627451, 0.627451, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ybr2j"]
+bg_color = Color(0.941176, 0.941176, 0.941176, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.627451, 0.627451, 0.627451, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_b5t21"]
+bg_color = Color(0.941176, 0.941176, 0.941176, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5iqkv"]
+bg_color = Color(0, 0.470588, 0.843137, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_r1i41"]
+bg_color = Color(0, 0, 0, 0.215686)
+
+[node name="ProgressContextGame" type="Control"]
+layout_mode = 3
+anchor_right = 3.856
+anchor_bottom = 1.06
+offset_right = -6.10352e-05
+offset_bottom = -3.05176e-05
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_horizontal_guides_ = [265.0, 214.0]
+metadata/_edit_use_anchors_ = true
+
+[node name="ProgContextStartGame" type="Panel" parent="."]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 6.10352e-05
+offset_bottom = 1335.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_daqld")
+script = ExtResource("1_w2bxp")
+
+[node name="StartGameMainHflow" type="HFlowContainer" parent="ProgContextStartGame"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+last_wrap_alignment = 1
+
+[node name="MiscPanel" type="Panel" parent="ProgContextStartGame/StartGameMainHflow"]
+custom_minimum_size = Vector2(295, 250)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_0ip61")
+
+[node name="NameLabel" type="Label" parent="ProgContextStartGame/StartGameMainHflow/MiscPanel"]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.0305085
+anchor_top = 0.0229057
+anchor_right = 0.186882
+anchor_bottom = 0.10566
+offset_top = -0.070014
+offset_right = -0.130112
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_lchmn")
+theme_override_font_sizes/font_size = 26
+text = "Name"
+metadata/_edit_use_anchors_ = true
+
+[node name="NameEditPanel" type="Panel" parent="ProgContextStartGame/StartGameMainHflow/MiscPanel"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.0237288
+anchor_top = 0.10566
+anchor_right = 0.779661
+anchor_bottom = 0.218868
+theme_override_styles/panel = SubResource("StyleBoxTexture_oa0yb")
+metadata/_edit_use_anchors_ = true
+
+[node name="Name_Edit" type="LineEdit" parent="ProgContextStartGame/StartGameMainHflow/MiscPanel/NameEditPanel"]
+unique_name_in_owner = true
+texture_filter = 1
+custom_minimum_size = Vector2(215, 0)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.005
+anchor_top = 0.026
+anchor_right = 0.995
+anchor_bottom = 1.0
+offset_left = 0.885
+offset_top = 1.22
+offset_right = -0.884995
+offset_bottom = -2.0
+theme_override_colors/clear_button_color_pressed = Color(0, 0, 0, 1)
+theme_override_colors/clear_button_color = Color(0, 0, 0, 1)
+theme_override_colors/selection_color = Color(0, 0, 0, 1)
+theme_override_colors/caret_color = Color(0, 0, 0, 1)
+theme_override_colors/font_placeholder_color = Color(0.5, 0.5, 0.5, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/font_selected_color = Color(0, 0, 0, 1)
+theme_override_colors/font_uneditable_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_lchmn")
+theme_override_font_sizes/font_size = 22
+theme_override_styles/normal = SubResource("StyleBoxFlat_j8737")
+text = "p"
+placeholder_text = "Bertrudes"
+max_length = 12
+context_menu_enabled = false
+selecting_enabled = false
+deselect_on_focus_loss_enabled = false
+drag_and_drop_selection_enabled = false
+caret_blink = true
+
+[node name="RacePanel" type="Panel" parent="ProgContextStartGame/StartGameMainHflow/MiscPanel"]
+layout_mode = 0
+anchor_left = 0.0135593
+anchor_top = 0.290566
+anchor_right = 0.511864
+anchor_bottom = 0.988679
+theme_override_styles/panel = SubResource("StyleBoxFlat_chmqm")
+metadata/_edit_use_anchors_ = true
+
+[node name="RaceLabel" type="Label" parent="ProgContextStartGame/StartGameMainHflow/MiscPanel/RacePanel"]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.0540001
+anchor_top = -0.0536216
+anchor_right = 0.299198
+anchor_bottom = 0.054
+offset_left = 0.0619998
+offset_top = -0.0799913
+offset_right = 0.0179939
+offset_bottom = 0.0100136
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_lchmn")
+theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = SubResource("StyleBoxFlat_lvm8b")
+text = "Race"
+metadata/_edit_use_anchors_ = true
+
+[node name="RaceScroll" type="ScrollContainer" parent="ProgContextStartGame/StartGameMainHflow/MiscPanel/RacePanel"]
+layout_mode = 2
+anchor_left = 0.0272109
+anchor_top = 0.0648649
+anchor_right = 0.972789
+anchor_bottom = 0.972973
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="RaceVbox" type="VBoxContainer" parent="ProgContextStartGame/StartGameMainHflow/MiscPanel/RacePanel/RaceScroll"]
+custom_minimum_size = Vector2(138, 0)
+layout_mode = 2
+theme_override_constants/separation = 0
+
+[node name="HumanPanel" type="Panel" parent="ProgContextStartGame/StartGameMainHflow/MiscPanel/RacePanel/RaceScroll/RaceVbox"]
+custom_minimum_size = Vector2(0, 24)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_odv1m")
+
+[node name="Human" type="CheckBox" parent="ProgContextStartGame/StartGameMainHflow/MiscPanel/RacePanel/RaceScroll/RaceVbox/HumanPanel"]
+unique_name_in_owner = true
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_lchmn")
+theme_override_font_sizes/font_size = 19
+theme_override_icons/radio_checked = ExtResource("4_f8r04")
+theme_override_icons/radio_unchecked = ExtResource("5_ehoca")
+button_pressed = true
+button_group = ExtResource("5_g1hc7")
+text = "Human"
+
+[node name="Elf" type="Panel" parent="ProgContextStartGame/StartGameMainHflow/MiscPanel/RacePanel/RaceScroll/RaceVbox"]
+custom_minimum_size = Vector2(0, 24)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_odv1m")
+
+[node name="Elf" type="CheckBox" parent="ProgContextStartGame/StartGameMainHflow/MiscPanel/RacePanel/RaceScroll/RaceVbox/Elf"]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_lchmn")
+theme_override_font_sizes/font_size = 19
+theme_override_icons/radio_checked = ExtResource("4_f8r04")
+theme_override_icons/radio_unchecked = ExtResource("5_ehoca")
+button_group = ExtResource("5_g1hc7")
+text = "Elf"
+
+[node name="Gnome" type="Panel" parent="ProgContextStartGame/StartGameMainHflow/MiscPanel/RacePanel/RaceScroll/RaceVbox"]
+custom_minimum_size = Vector2(0, 24)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_odv1m")
+
+[node name="Gnome" type="CheckBox" parent="ProgContextStartGame/StartGameMainHflow/MiscPanel/RacePanel/RaceScroll/RaceVbox/Gnome"]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_lchmn")
+theme_override_font_sizes/font_size = 19
+theme_override_icons/radio_checked = ExtResource("4_f8r04")
+theme_override_icons/radio_unchecked = ExtResource("5_ehoca")
+button_group = ExtResource("5_g1hc7")
+text = "Gnome"
+
+[node name="Aligator" type="Panel" parent="ProgContextStartGame/StartGameMainHflow/MiscPanel/RacePanel/RaceScroll/RaceVbox"]
+custom_minimum_size = Vector2(0, 24)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_odv1m")
+
+[node name="Aligator" type="CheckBox" parent="ProgContextStartGame/StartGameMainHflow/MiscPanel/RacePanel/RaceScroll/RaceVbox/Aligator"]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_lchmn")
+theme_override_font_sizes/font_size = 19
+theme_override_icons/radio_checked = ExtResource("4_f8r04")
+theme_override_icons/radio_unchecked = ExtResource("5_ehoca")
+button_group = ExtResource("5_g1hc7")
+text = "Aligator"
+
+[node name="Perua" type="Panel" parent="ProgContextStartGame/StartGameMainHflow/MiscPanel/RacePanel/RaceScroll/RaceVbox"]
+custom_minimum_size = Vector2(0, 24)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_odv1m")
+
+[node name="Perua" type="CheckBox" parent="ProgContextStartGame/StartGameMainHflow/MiscPanel/RacePanel/RaceScroll/RaceVbox/Perua"]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_lchmn")
+theme_override_font_sizes/font_size = 19
+theme_override_icons/radio_checked = ExtResource("4_f8r04")
+theme_override_icons/radio_unchecked = ExtResource("5_ehoca")
+button_group = ExtResource("5_g1hc7")
+text = "Perua"
+
+[node name="Aquatic" type="Panel" parent="ProgContextStartGame/StartGameMainHflow/MiscPanel/RacePanel/RaceScroll/RaceVbox"]
+custom_minimum_size = Vector2(0, 24)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_odv1m")
+
+[node name="Aquatic" type="CheckBox" parent="ProgContextStartGame/StartGameMainHflow/MiscPanel/RacePanel/RaceScroll/RaceVbox/Aquatic"]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_lchmn")
+theme_override_font_sizes/font_size = 19
+theme_override_icons/radio_checked = ExtResource("4_f8r04")
+theme_override_icons/radio_unchecked = ExtResource("5_ehoca")
+button_group = ExtResource("5_g1hc7")
+text = "Aquatic"
+
+[node name="Fortenzen" type="Panel" parent="ProgContextStartGame/StartGameMainHflow/MiscPanel/RacePanel/RaceScroll/RaceVbox"]
+custom_minimum_size = Vector2(0, 24)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_odv1m")
+
+[node name="Fortenzen" type="CheckBox" parent="ProgContextStartGame/StartGameMainHflow/MiscPanel/RacePanel/RaceScroll/RaceVbox/Fortenzen"]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_lchmn")
+theme_override_font_sizes/font_size = 19
+theme_override_icons/radio_checked = ExtResource("4_f8r04")
+theme_override_icons/radio_unchecked = ExtResource("5_ehoca")
+button_group = ExtResource("5_g1hc7")
+text = "Fortenzen"
+
+[node name="Jesus" type="Panel" parent="ProgContextStartGame/StartGameMainHflow/MiscPanel/RacePanel/RaceScroll/RaceVbox"]
+custom_minimum_size = Vector2(0, 24)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_odv1m")
+
+[node name="Jesus" type="CheckBox" parent="ProgContextStartGame/StartGameMainHflow/MiscPanel/RacePanel/RaceScroll/RaceVbox/Jesus"]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_lchmn")
+theme_override_font_sizes/font_size = 19
+theme_override_icons/radio_checked = ExtResource("4_f8r04")
+theme_override_icons/radio_unchecked = ExtResource("5_ehoca")
+button_group = ExtResource("5_g1hc7")
+text = "Jesus"
+
+[node name="Falcon" type="Panel" parent="ProgContextStartGame/StartGameMainHflow/MiscPanel/RacePanel/RaceScroll/RaceVbox"]
+custom_minimum_size = Vector2(0, 24)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_odv1m")
+
+[node name="Falcon" type="CheckBox" parent="ProgContextStartGame/StartGameMainHflow/MiscPanel/RacePanel/RaceScroll/RaceVbox/Falcon"]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_lchmn")
+theme_override_font_sizes/font_size = 19
+theme_override_icons/radio_checked = ExtResource("4_f8r04")
+theme_override_icons/radio_unchecked = ExtResource("5_ehoca")
+button_group = ExtResource("5_g1hc7")
+text = "Falcon"
+
+[node name="Perdipregas" type="Panel" parent="ProgContextStartGame/StartGameMainHflow/MiscPanel/RacePanel/RaceScroll/RaceVbox"]
+custom_minimum_size = Vector2(0, 24)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_odv1m")
+
+[node name="Perdipregas" type="CheckBox" parent="ProgContextStartGame/StartGameMainHflow/MiscPanel/RacePanel/RaceScroll/RaceVbox/Perdipregas"]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_lchmn")
+theme_override_font_sizes/font_size = 19
+theme_override_icons/radio_checked = ExtResource("4_f8r04")
+theme_override_icons/radio_unchecked = ExtResource("5_ehoca")
+button_group = ExtResource("5_g1hc7")
+text = "Perdipregas"
+
+[node name="Maiusculo" type="Panel" parent="ProgContextStartGame/StartGameMainHflow/MiscPanel/RacePanel/RaceScroll/RaceVbox"]
+custom_minimum_size = Vector2(0, 24)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_odv1m")
+
+[node name="Maiusculo" type="CheckBox" parent="ProgContextStartGame/StartGameMainHflow/MiscPanel/RacePanel/RaceScroll/RaceVbox/Maiusculo"]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_lchmn")
+theme_override_font_sizes/font_size = 19
+theme_override_icons/radio_checked = ExtResource("4_f8r04")
+theme_override_icons/radio_unchecked = ExtResource("5_ehoca")
+button_group = ExtResource("5_g1hc7")
+text = "Maiusculo"
+
+[node name="ClassPanel" type="Panel" parent="ProgContextStartGame/StartGameMainHflow/MiscPanel"]
+layout_mode = 0
+anchor_left = 0.535593
+anchor_top = 0.290566
+anchor_right = 0.983051
+anchor_bottom = 0.988679
+theme_override_styles/panel = ExtResource("7_i8vre")
+metadata/_edit_use_anchors_ = true
+
+[node name="ClassLabel" type="Label" parent="ProgContextStartGame/StartGameMainHflow/MiscPanel/ClassPanel"]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.0606066
+anchor_top = -0.054054
+anchor_right = 0.348485
+anchor_bottom = 0.0540541
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_lchmn")
+theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = SubResource("StyleBoxFlat_mq8sf")
+text = "Class"
+metadata/_edit_use_anchors_ = true
+
+[node name="ClassScroll" type="ScrollContainer" parent="ProgContextStartGame/StartGameMainHflow/MiscPanel/ClassPanel"]
+layout_mode = 2
+anchor_left = 0.553338
+anchor_top = 0.324426
+anchor_right = 1.49273
+anchor_bottom = 1.22713
+offset_left = -69.0407
+offset_top = -48.0189
+offset_right = -69.0407
+offset_bottom = -48.0189
+metadata/_edit_use_anchors_ = true
+
+[node name="ClassVbox" type="VBoxContainer" parent="ProgContextStartGame/StartGameMainHflow/MiscPanel/ClassPanel/ClassScroll"]
+custom_minimum_size = Vector2(123.915, 0)
+layout_mode = 2
+theme_override_constants/separation = 0
+
+[node name="Warrior" type="Panel" parent="ProgContextStartGame/StartGameMainHflow/MiscPanel/ClassPanel/ClassScroll/ClassVbox"]
+custom_minimum_size = Vector2(0, 24)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_70iio")
+
+[node name="Warrior" type="CheckBox" parent="ProgContextStartGame/StartGameMainHflow/MiscPanel/ClassPanel/ClassScroll/ClassVbox/Warrior"]
+unique_name_in_owner = true
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_lchmn")
+theme_override_font_sizes/font_size = 19
+theme_override_icons/radio_checked = ExtResource("4_f8r04")
+theme_override_icons/radio_unchecked = ExtResource("5_ehoca")
+button_pressed = true
+button_group = ExtResource("6_ntf4j")
+text = "Warrior"
+
+[node name="Rogue" type="Panel" parent="ProgContextStartGame/StartGameMainHflow/MiscPanel/ClassPanel/ClassScroll/ClassVbox"]
+custom_minimum_size = Vector2(0, 24)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_70iio")
+
+[node name="Rogue" type="CheckBox" parent="ProgContextStartGame/StartGameMainHflow/MiscPanel/ClassPanel/ClassScroll/ClassVbox/Rogue"]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_lchmn")
+theme_override_font_sizes/font_size = 19
+theme_override_icons/radio_checked = ExtResource("4_f8r04")
+theme_override_icons/radio_unchecked = ExtResource("5_ehoca")
+button_group = ExtResource("6_ntf4j")
+text = "Rogue"
+
+[node name="Tank" type="Panel" parent="ProgContextStartGame/StartGameMainHflow/MiscPanel/ClassPanel/ClassScroll/ClassVbox"]
+custom_minimum_size = Vector2(0, 24)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_70iio")
+
+[node name="Tank" type="CheckBox" parent="ProgContextStartGame/StartGameMainHflow/MiscPanel/ClassPanel/ClassScroll/ClassVbox/Tank"]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_lchmn")
+theme_override_font_sizes/font_size = 19
+theme_override_icons/radio_checked = ExtResource("4_f8r04")
+theme_override_icons/radio_unchecked = ExtResource("5_ehoca")
+button_group = ExtResource("6_ntf4j")
+text = "Tank"
+
+[node name="Coalizao" type="Panel" parent="ProgContextStartGame/StartGameMainHflow/MiscPanel/ClassPanel/ClassScroll/ClassVbox"]
+custom_minimum_size = Vector2(0, 24)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_70iio")
+
+[node name="Coalizao" type="CheckBox" parent="ProgContextStartGame/StartGameMainHflow/MiscPanel/ClassPanel/ClassScroll/ClassVbox/Coalizao"]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_lchmn")
+theme_override_font_sizes/font_size = 19
+theme_override_icons/radio_checked = ExtResource("4_f8r04")
+theme_override_icons/radio_unchecked = ExtResource("5_ehoca")
+button_group = ExtResource("6_ntf4j")
+text = "Coalizao"
+
+[node name="Fecundado" type="Panel" parent="ProgContextStartGame/StartGameMainHflow/MiscPanel/ClassPanel/ClassScroll/ClassVbox"]
+custom_minimum_size = Vector2(0, 24)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_70iio")
+
+[node name="Fecundado" type="CheckBox" parent="ProgContextStartGame/StartGameMainHflow/MiscPanel/ClassPanel/ClassScroll/ClassVbox/Fecundado"]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_lchmn")
+theme_override_font_sizes/font_size = 19
+theme_override_icons/radio_checked = ExtResource("4_f8r04")
+theme_override_icons/radio_unchecked = ExtResource("5_ehoca")
+button_group = ExtResource("6_ntf4j")
+text = "Fecundado"
+
+[node name="Fasmerir" type="Panel" parent="ProgContextStartGame/StartGameMainHflow/MiscPanel/ClassPanel/ClassScroll/ClassVbox"]
+custom_minimum_size = Vector2(0, 24)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_70iio")
+
+[node name="Fasmerir" type="CheckBox" parent="ProgContextStartGame/StartGameMainHflow/MiscPanel/ClassPanel/ClassScroll/ClassVbox/Fasmerir"]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_lchmn")
+theme_override_font_sizes/font_size = 19
+theme_override_icons/radio_checked = ExtResource("4_f8r04")
+theme_override_icons/radio_unchecked = ExtResource("5_ehoca")
+button_group = ExtResource("6_ntf4j")
+text = "Fasmerir"
+
+[node name="Tereza" type="Panel" parent="ProgContextStartGame/StartGameMainHflow/MiscPanel/ClassPanel/ClassScroll/ClassVbox"]
+custom_minimum_size = Vector2(0, 24)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_70iio")
+
+[node name="Tereza" type="CheckBox" parent="ProgContextStartGame/StartGameMainHflow/MiscPanel/ClassPanel/ClassScroll/ClassVbox/Tereza"]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_lchmn")
+theme_override_font_sizes/font_size = 19
+theme_override_icons/radio_checked = ExtResource("4_f8r04")
+theme_override_icons/radio_unchecked = ExtResource("5_ehoca")
+button_group = ExtResource("6_ntf4j")
+text = "Tereza"
+
+[node name="Coagido" type="Panel" parent="ProgContextStartGame/StartGameMainHflow/MiscPanel/ClassPanel/ClassScroll/ClassVbox"]
+custom_minimum_size = Vector2(0, 24)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_70iio")
+
+[node name="Coagido" type="CheckBox" parent="ProgContextStartGame/StartGameMainHflow/MiscPanel/ClassPanel/ClassScroll/ClassVbox/Coagido"]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_lchmn")
+theme_override_font_sizes/font_size = 19
+theme_override_icons/radio_checked = ExtResource("4_f8r04")
+theme_override_icons/radio_unchecked = ExtResource("5_ehoca")
+button_group = ExtResource("6_ntf4j")
+text = "Coagido"
+
+[node name="Faminto" type="Panel" parent="ProgContextStartGame/StartGameMainHflow/MiscPanel/ClassPanel/ClassScroll/ClassVbox"]
+custom_minimum_size = Vector2(0, 24)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_70iio")
+
+[node name="Faminto" type="CheckBox" parent="ProgContextStartGame/StartGameMainHflow/MiscPanel/ClassPanel/ClassScroll/ClassVbox/Faminto"]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_lchmn")
+theme_override_font_sizes/font_size = 19
+theme_override_icons/radio_checked = ExtResource("4_f8r04")
+theme_override_icons/radio_unchecked = ExtResource("5_ehoca")
+button_group = ExtResource("6_ntf4j")
+text = "Faminto"
+
+[node name="Yogurt" type="Panel" parent="ProgContextStartGame/StartGameMainHflow/MiscPanel/ClassPanel/ClassScroll/ClassVbox"]
+custom_minimum_size = Vector2(0, 24)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_70iio")
+
+[node name="Yogurt" type="CheckBox" parent="ProgContextStartGame/StartGameMainHflow/MiscPanel/ClassPanel/ClassScroll/ClassVbox/Yogurt"]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_lchmn")
+theme_override_font_sizes/font_size = 19
+theme_override_icons/radio_checked = ExtResource("4_f8r04")
+theme_override_icons/radio_unchecked = ExtResource("5_ehoca")
+button_group = ExtResource("6_ntf4j")
+text = "Yogurt"
+
+[node name="RandomNameButton" type="Button" parent="ProgContextStartGame/StartGameMainHflow/MiscPanel"]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 83.5
+offset_top = -104.5
+offset_right = 107.5
+offset_bottom = -75.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_normal_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_disabled_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_lchmn")
+theme_override_font_sizes/font_size = 30
+theme_override_styles/focus = SubResource("StyleBoxTexture_mtk48")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxTexture_mtk48")
+theme_override_styles/disabled = SubResource("StyleBoxTexture_mtk48")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxTexture_mtk48")
+theme_override_styles/hover_pressed = SubResource("StyleBoxTexture_mtk48")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxTexture_mtk48")
+theme_override_styles/hover = SubResource("StyleBoxTexture_mtk48")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxTexture_mtk48")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_mtk48")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxTexture_mtk48")
+theme_override_styles/normal = SubResource("StyleBoxTexture_mtk48")
+text = "?"
+
+[node name="StatsPanel" type="Panel" parent="ProgContextStartGame/StartGameMainHflow"]
+custom_minimum_size = Vector2(95, 265)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_uaxme")
+
+[node name="SubStatsPanel" type="Panel" parent="ProgContextStartGame/StartGameMainHflow/StatsPanel"]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.090566
+anchor_right = 1.0
+anchor_bottom = 0.988679
+theme_override_styles/panel = ExtResource("7_i8vre")
+metadata/_edit_use_anchors_ = true
+
+[node name="StatsVbox" type="VBoxContainer" parent="ProgContextStartGame/StartGameMainHflow/StatsPanel/SubStatsPanel"]
+layout_mode = 2
+anchor_left = 0.042
+anchor_top = -0.033
+anchor_right = 0.989
+anchor_bottom = 0.977
+offset_left = 0.00999975
+offset_top = -4.146
+offset_right = 0.0449982
+offset_bottom = 8.47398
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_constants/separation = 4
+
+[node name="Stats_Label" type="Label" parent="ProgContextStartGame/StartGameMainHflow/StatsPanel/SubStatsPanel/StatsVbox"]
+layout_mode = 2
+size_flags_horizontal = 0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_lchmn")
+theme_override_font_sizes/font_size = 26
+theme_override_styles/normal = SubResource("StyleBoxFlat_khyru")
+text = "Stats"
+
+[node name="Strength_Panel" type="Panel" parent="ProgContextStartGame/StartGameMainHflow/StatsPanel/SubStatsPanel/StatsVbox"]
+custom_minimum_size = Vector2(75, 27)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_styles/panel = SubResource("StyleBoxEmpty_kh7ek")
+
+[node name="STR_Label" type="Label" parent="ProgContextStartGame/StartGameMainHflow/StatsPanel/SubStatsPanel/StatsVbox/Strength_Panel"]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 6.0
+offset_top = -11.5
+offset_right = 40.0
+offset_bottom = 11.5
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_lchmn")
+theme_override_font_sizes/font_size = 28
+text = "STR"
+
+[node name="STR" type="Label" parent="ProgContextStartGame/StartGameMainHflow/StatsPanel/SubStatsPanel/StatsVbox/Strength_Panel" groups=["Stats_Value"]]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 2.5
+offset_top = -12.5
+offset_right = 42.5
+offset_bottom = 12.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_lchmn")
+theme_override_font_sizes/font_size = 28
+theme_override_styles/normal = ExtResource("10_a4j3n")
+text = "102"
+
+[node name="Constitution_Panel" type="Panel" parent="ProgContextStartGame/StartGameMainHflow/StatsPanel/SubStatsPanel/StatsVbox"]
+custom_minimum_size = Vector2(75, 27)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_styles/panel = SubResource("StyleBoxEmpty_kh7ek")
+
+[node name="CON_Label" type="Label" parent="ProgContextStartGame/StartGameMainHflow/StatsPanel/SubStatsPanel/StatsVbox/Constitution_Panel"]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = -1.0
+offset_top = -11.5
+offset_right = 39.0
+offset_bottom = 12.5
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_lchmn")
+theme_override_font_sizes/font_size = 29
+text = "CON"
+
+[node name="CON" type="Label" parent="ProgContextStartGame/StartGameMainHflow/StatsPanel/SubStatsPanel/StatsVbox/Constitution_Panel" groups=["Stats_Value"]]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -35.0
+offset_top = -12.5
+offset_right = 5.0
+offset_bottom = 12.5
+grow_horizontal = 0
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_lchmn")
+theme_override_font_sizes/font_size = 28
+theme_override_styles/normal = ExtResource("10_a4j3n")
+text = "102"
+
+[node name="Dexterity_Panel" type="Panel" parent="ProgContextStartGame/StartGameMainHflow/StatsPanel/SubStatsPanel/StatsVbox"]
+custom_minimum_size = Vector2(75, 27)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_styles/panel = SubResource("StyleBoxEmpty_kh7ek")
+
+[node name="DEX_Label" type="Label" parent="ProgContextStartGame/StartGameMainHflow/StatsPanel/SubStatsPanel/StatsVbox/Dexterity_Panel"]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 5.0
+offset_top = -11.5
+offset_right = 45.0
+offset_bottom = 11.5
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_lchmn")
+theme_override_font_sizes/font_size = 28
+text = "DEX"
+
+[node name="DEX" type="Label" parent="ProgContextStartGame/StartGameMainHflow/StatsPanel/SubStatsPanel/StatsVbox/Dexterity_Panel" groups=["Stats_Value"]]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -35.0
+offset_top = -12.5
+offset_right = 5.0
+offset_bottom = 12.5
+grow_horizontal = 0
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_lchmn")
+theme_override_font_sizes/font_size = 28
+theme_override_styles/normal = ExtResource("10_a4j3n")
+text = "102"
+
+[node name="Intelligence_Panel" type="Panel" parent="ProgContextStartGame/StartGameMainHflow/StatsPanel/SubStatsPanel/StatsVbox"]
+custom_minimum_size = Vector2(75, 27)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_styles/panel = SubResource("StyleBoxEmpty_kh7ek")
+
+[node name="INT_Label" type="Label" parent="ProgContextStartGame/StartGameMainHflow/StatsPanel/SubStatsPanel/StatsVbox/Intelligence_Panel"]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 8.0
+offset_top = -11.5
+offset_right = 48.0
+offset_bottom = 11.5
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_lchmn")
+theme_override_font_sizes/font_size = 28
+text = "INT"
+
+[node name="INT" type="Label" parent="ProgContextStartGame/StartGameMainHflow/StatsPanel/SubStatsPanel/StatsVbox/Intelligence_Panel" groups=["Stats_Value"]]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -35.0
+offset_top = -12.5
+offset_right = 5.0
+offset_bottom = 12.5
+grow_horizontal = 0
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_lchmn")
+theme_override_font_sizes/font_size = 28
+theme_override_styles/normal = ExtResource("10_a4j3n")
+text = "102"
+
+[node name="Wisdom_Panel" type="Panel" parent="ProgContextStartGame/StartGameMainHflow/StatsPanel/SubStatsPanel/StatsVbox"]
+custom_minimum_size = Vector2(75, 27)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_styles/panel = SubResource("StyleBoxEmpty_kh7ek")
+
+[node name="WIS_Label" type="Label" parent="ProgContextStartGame/StartGameMainHflow/StatsPanel/SubStatsPanel/StatsVbox/Wisdom_Panel"]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 1.0
+offset_top = -11.5
+offset_right = 41.0
+offset_bottom = 11.5
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_lchmn")
+theme_override_font_sizes/font_size = 28
+text = "WIS"
+
+[node name="WIS" type="Label" parent="ProgContextStartGame/StartGameMainHflow/StatsPanel/SubStatsPanel/StatsVbox/Wisdom_Panel" groups=["Stats_Value"]]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -35.0
+offset_top = -12.5
+offset_right = 5.0
+offset_bottom = 12.5
+grow_horizontal = 0
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_lchmn")
+theme_override_font_sizes/font_size = 28
+theme_override_styles/normal = ExtResource("10_a4j3n")
+text = "102"
+
+[node name="Charisma_Panel" type="Panel" parent="ProgContextStartGame/StartGameMainHflow/StatsPanel/SubStatsPanel/StatsVbox"]
+custom_minimum_size = Vector2(75, 27)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_styles/panel = SubResource("StyleBoxEmpty_kh7ek")
+
+[node name="CHA_Label" type="Label" parent="ProgContextStartGame/StartGameMainHflow/StatsPanel/SubStatsPanel/StatsVbox/Charisma_Panel"]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_top = -11.5
+offset_right = 40.0
+offset_bottom = 11.5
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_lchmn")
+theme_override_font_sizes/font_size = 28
+text = "CHA"
+
+[node name="CHA" type="Label" parent="ProgContextStartGame/StartGameMainHflow/StatsPanel/SubStatsPanel/StatsVbox/Charisma_Panel" groups=["Stats_Value"]]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -35.0
+offset_top = -12.5
+offset_right = 5.0
+offset_bottom = 12.5
+grow_horizontal = 0
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_lchmn")
+theme_override_font_sizes/font_size = 28
+theme_override_styles/normal = ExtResource("10_a4j3n")
+text = "102"
+
+[node name="Roll_Unroll_Panel" type="Panel" parent="ProgContextStartGame/StartGameMainHflow/StatsPanel/SubStatsPanel/StatsVbox"]
+custom_minimum_size = Vector2(90, 35)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_styles/panel = SubResource("StyleBoxEmpty_d4eq7")
+
+[node name="Roll_Button" type="Button" parent="ProgContextStartGame/StartGameMainHflow/StatsPanel/SubStatsPanel/StatsVbox/Roll_Unroll_Panel"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.0222222
+anchor_top = 0.114286
+anchor_right = 0.444444
+anchor_bottom = 0.885714
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_normal_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_disabled_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_lchmn")
+theme_override_font_sizes/font_size = 20
+theme_override_styles/focus = SubResource("StyleBoxTexture_ronv8")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxTexture_ronv8")
+theme_override_styles/disabled = SubResource("StyleBoxTexture_ronv8")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxTexture_ronv8")
+theme_override_styles/hover_pressed = SubResource("StyleBoxTexture_ronv8")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxTexture_ronv8")
+theme_override_styles/hover = SubResource("StyleBoxTexture_ronv8")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxTexture_ronv8")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_ronv8")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxTexture_ronv8")
+theme_override_styles/normal = SubResource("StyleBoxTexture_ronv8")
+text = "Roll"
+metadata/_edit_use_anchors_ = true
+
+[node name="Unroll_Button" type="Button" parent="ProgContextStartGame/StartGameMainHflow/StatsPanel/SubStatsPanel/StatsVbox/Roll_Unroll_Panel"]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.488889
+anchor_top = 0.114286
+anchor_right = 0.944445
+anchor_bottom = 0.885714
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_normal_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_disabled_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_lchmn")
+theme_override_font_sizes/font_size = 20
+theme_override_styles/focus = SubResource("StyleBoxTexture_f1vow")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_sd2cc")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxFlat_sd2cc")
+theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_sd2cc")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxFlat_sd2cc")
+theme_override_styles/hover = SubResource("StyleBoxFlat_sd2cc")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxFlat_sd2cc")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_sd2cc")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxTexture_f1vow")
+theme_override_styles/normal = SubResource("StyleBoxTexture_f1vow")
+disabled = true
+text = "Unroll"
+metadata/_edit_use_anchors_ = true
+
+[node name="ContextPanel" type="Panel" parent="ProgContextStartGame/StartGameMainHflow"]
+custom_minimum_size = Vector2(302, 265)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_0f4ec")
+
+[node name="SubContextPanel" type="Panel" parent="ProgContextStartGame/StartGameMainHflow/ContextPanel"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 0.989
+offset_top = 24.0
+offset_bottom = -0.0849915
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = ExtResource("7_i8vre")
+
+[node name="Context_Label" type="Label" parent="ProgContextStartGame/StartGameMainHflow/ContextPanel/SubContextPanel"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.00993378
+anchor_top = 0.0466149
+anchor_right = 0.221934
+anchor_bottom = 0.134425
+offset_top = -23.0943
+offset_right = -0.0240707
+offset_bottom = -21.9932
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_lchmn")
+theme_override_font_sizes/font_size = 26
+theme_override_styles/normal = SubResource("StyleBoxFlat_levkx")
+text = "Context"
+metadata/_edit_use_anchors_ = true
+
+[node name="Context_Tab" type="TabContainer" parent="ProgContextStartGame/StartGameMainHflow/ContextPanel/SubContextPanel"]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.00993378
+anchor_top = 0.116981
+anchor_right = 0.990066
+anchor_bottom = 0.984906
+offset_top = -14.8415
+offset_right = 6.10352e-05
+offset_bottom = 0.592361
+theme_override_colors/font_selected_color = Color(0, 0, 0, 1)
+theme_override_constants/side_margin = 2
+theme_override_fonts/font = ExtResource("2_lchmn")
+theme_override_font_sizes/font_size = 18
+theme_override_styles/panel = SubResource("StyleBoxEmpty_fwdfh")
+theme_override_styles/tab_selected = SubResource("StyleBoxFlat_csr7l")
+current_tab = 0
+
+[node name="Cruz_Credo\'s Dungeon" type="Panel" parent="ProgContextStartGame/StartGameMainHflow/ContextPanel/SubContextPanel/Context_Tab"]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_ymvgw")
+metadata/_tab_index = 0
+
+[node name="Panel" type="Panel" parent="ProgContextStartGame/StartGameMainHflow/ContextPanel/SubContextPanel/Context_Tab/Cruz_Credo\'s Dungeon"]
+layout_mode = 2
+anchor_left = 0.0101351
+anchor_right = 0.445946
+anchor_bottom = 0.0108953
+theme_override_styles/panel = SubResource("StyleBoxFlat_x3etb")
+metadata/_edit_use_anchors_ = true
+
+[node name="MarginContainer" type="MarginContainer" parent="ProgContextStartGame/StartGameMainHflow/ContextPanel/SubContextPanel/Context_Tab/Cruz_Credo\'s Dungeon"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 5
+theme_override_constants/margin_top = 5
+theme_override_constants/margin_right = 5
+theme_override_constants/margin_bottom = 5
+metadata/_edit_use_anchors_ = true
+
+[node name="Cruz_RichText" type="RichTextLabel" parent="ProgContextStartGame/StartGameMainHflow/ContextPanel/SubContextPanel/Context_Tab/Cruz_Credo\'s Dungeon/MarginContainer"]
+layout_mode = 2
+theme_override_fonts/normal_font = ExtResource("2_lchmn")
+theme_override_font_sizes/normal_font_size = 18
+bbcode_enabled = true
+text = "[color=black]Cruz credo was a great traveler of the deepest dungeons in the world, but he was caught on his last adventure after his unimaginable greed for the “firtole” trinket. Since then, no one has been to his last dungeon. But his curiosity is such that he lets himself be carried away by the desire to explore the place."
+
+[node name="StartGame_Sold_Button" type="VBoxContainer" parent="ProgContextStartGame"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.923
+anchor_top = 1.0
+anchor_right = 0.959
+anchor_bottom = 1.0
+offset_left = -136.772
+offset_top = -1386.0
+offset_right = -1.47601
+offset_bottom = -1335.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/separation = 30
+alignment = 1
+
+[node name="VBoxContainer" type="HBoxContainer" parent="ProgContextStartGame/StartGame_Sold_Button"]
+layout_mode = 2
+size_flags_vertical = 8
+theme_override_constants/separation = 20
+alignment = 1
+
+[node name="Load_Button" type="Button" parent="ProgContextStartGame/StartGame_Sold_Button/VBoxContainer"]
+visible = false
+custom_minimum_size = Vector2(75, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 8
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_lchmn")
+theme_override_font_sizes/font_size = 35
+theme_override_styles/normal = SubResource("StyleBoxTexture_vkhc8")
+text = "Load!"
+
+[node name="Sold_Button" type="Button" parent="ProgContextStartGame/StartGame_Sold_Button/VBoxContainer"]
+unique_name_in_owner = true
+texture_filter = 1
+custom_minimum_size = Vector2(75, 0)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 8
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_normal_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_disabled_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_lchmn")
+theme_override_font_sizes/font_size = 35
+theme_override_styles/focus = SubResource("StyleBoxTexture_ma7md")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxTexture_ma7md")
+theme_override_styles/disabled = SubResource("StyleBoxTexture_ma7md")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxTexture_ma7md")
+theme_override_styles/hover_pressed = SubResource("StyleBoxTexture_ma7md")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxTexture_ma7md")
+theme_override_styles/hover = SubResource("StyleBoxTexture_ma7md")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxTexture_ma7md")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_ma7md")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxTexture_ma7md")
+theme_override_styles/normal = SubResource("StyleBoxTexture_ma7md")
+text = "Sold!"
+
+[node name="ProgContextGameItSelf" type="Panel" parent="."]
+unique_name_in_owner = true
+visible = false
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 6.10352e-05
+offset_bottom = 1335.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_ts8xi")
+script = ExtResource("8_qna6g")
+
+[node name="GameItSelf_Hflow_Center" type="HFlowContainer" parent="ProgContextGameItSelf"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 2.0
+offset_top = 2.0
+offset_right = 2.00006
+offset_bottom = 272.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/h_separation = 0
+theme_override_constants/v_separation = 0
+last_wrap_alignment = 1
+
+[node name="GameItSelf_Hflow_Work" type="HFlowContainer" parent="ProgContextGameItSelf/GameItSelf_Hflow_Center"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/h_separation = 0
+theme_override_constants/v_separation = -1
+
+[node name="Character" type="Panel" parent="ProgContextGameItSelf/GameItSelf_Hflow_Center/GameItSelf_Hflow_Work"]
+custom_minimum_size = Vector2(125, 120)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_lb8d0")
+
+[node name="Character" type="Panel" parent="ProgContextGameItSelf/GameItSelf_Hflow_Center/GameItSelf_Hflow_Work/Character"]
+custom_minimum_size = Vector2(125, 0)
+layout_mode = 2
+anchor_right = 1.0
+anchor_bottom = 0.107
+offset_bottom = 1.16
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_navi5")
+
+[node name="Char_Label" type="Label" parent="ProgContextGameItSelf/GameItSelf_Hflow_Center/GameItSelf_Hflow_Work/Character/Character"]
+layout_mode = 2
+anchor_left = 0.304
+anchor_right = 0.688
+anchor_bottom = 1.0
+offset_bottom = 0.17
+size_flags_horizontal = 4
+text = "Character"
+label_settings = ExtResource("6_ted0d")
+
+[node name="Char_Attributes" type="Panel" parent="ProgContextGameItSelf/GameItSelf_Hflow_Center/GameItSelf_Hflow_Work/Character/Character"]
+layout_mode = 2
+anchor_top = 0.94
+anchor_right = 1.0
+anchor_bottom = 8.238
+offset_top = 0.84
+offset_bottom = -16.332
+theme_override_styles/panel = SubResource("StyleBoxFlat_ab1r6")
+
+[node name="Attributes_Label" type="Label" parent="ProgContextGameItSelf/GameItSelf_Hflow_Center/GameItSelf_Hflow_Work/Character/Character/Char_Attributes"]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 2.0
+offset_right = 1.0
+offset_bottom = -3.8147e-05
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_vertical = 0
+text = "Name: test
+Race: test
+Class: test
+HP: 1        HP Max:10
+MP: 1       MP Max:10
+"
+label_settings = ExtResource("6_ted0d")
+
+[node name="Char_Level" type="Panel" parent="ProgContextGameItSelf/GameItSelf_Hflow_Center/GameItSelf_Hflow_Work/Character/Character"]
+layout_mode = 2
+anchor_top = 6.57138
+anchor_right = 0.992
+anchor_bottom = 8.56633
+offset_top = 0.000617981
+offset_bottom = -0.928589
+theme_override_styles/panel = SubResource("StyleBoxFlat_g0wn4")
+metadata/_edit_use_anchors_ = true
+
+[node name="MarginContainer" type="MarginContainer" parent="ProgContextGameItSelf/GameItSelf_Hflow_Center/GameItSelf_Hflow_Work/Character/Character/Char_Level"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.296
+anchor_bottom = 0.5
+offset_right = -7.0
+theme_override_constants/margin_left = 2
+
+[node name="Level_Label" type="Label" parent="ProgContextGameItSelf/GameItSelf_Hflow_Center/GameItSelf_Hflow_Work/Character/Character/Char_Level/MarginContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 4
+text = "Level: 1"
+label_settings = ExtResource("6_ted0d")
+metadata/_edit_use_anchors_ = true
+
+[node name="Char_Level2" type="Panel" parent="ProgContextGameItSelf/GameItSelf_Hflow_Center/GameItSelf_Hflow_Work/Character/Character/Char_Level"]
+layout_mode = 2
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.964
+offset_top = -1.5
+offset_right = 1.0
+offset_bottom = 0.972
+theme_override_styles/panel = SubResource("StyleBoxFlat_44qup")
+
+[node name="MarginContainer" type="MarginContainer" parent="ProgContextGameItSelf/GameItSelf_Hflow_Center/GameItSelf_Hflow_Work/Character/Character/Char_Level/Char_Level2"]
+layout_mode = 1
+offset_right = 125.0
+offset_bottom = 14.0
+theme_override_constants/margin_left = 2
+theme_override_constants/margin_top = 2
+theme_override_constants/margin_right = 2
+theme_override_constants/margin_bottom = 1
+
+[node name="Exp_Bar" type="ProgressBar" parent="ProgContextGameItSelf/GameItSelf_Hflow_Center/GameItSelf_Hflow_Work/Character/Character/Char_Level/Char_Level2/MarginContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 1
+theme_override_styles/background = SubResource("StyleBoxFlat_dfavp")
+theme_override_styles/fill = SubResource("StyleBoxFlat_jolu2")
+step = 1.0
+rounded = true
+show_percentage = false
+
+[node name="MarginContainer" type="MarginContainer" parent="ProgContextGameItSelf/GameItSelf_Hflow_Center/GameItSelf_Hflow_Work/Character/Character/Char_Level/Char_Level2/MarginContainer/Exp_Bar"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -18.5
+offset_top = -7.0
+offset_right = 18.5
+offset_bottom = 7.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Exp_Label" type="Label" parent="ProgContextGameItSelf/GameItSelf_Hflow_Center/GameItSelf_Hflow_Work/Character/Character/Char_Level/Char_Level2/MarginContainer/Exp_Bar/MarginContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 4
+text = "Exp: 0/100"
+label_settings = SubResource("LabelSettings_uc5dw")
+metadata/_edit_use_anchors_ = true
+
+[node name="WIP" type="Panel" parent="ProgContextGameItSelf/GameItSelf_Hflow_Center/GameItSelf_Hflow_Work/Character/Character"]
+layout_mode = 0
+offset_top = 119.0
+offset_right = 125.0
+offset_bottom = 120.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_rskml")
+
+[node name="Stats_Value" type="Panel" parent="ProgContextGameItSelf/GameItSelf_Hflow_Center/GameItSelf_Hflow_Work"]
+custom_minimum_size = Vector2(65, 110)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_b3ajp")
+
+[node name="Stats_Names" type="Panel" parent="ProgContextGameItSelf/GameItSelf_Hflow_Center/GameItSelf_Hflow_Work/Stats_Value"]
+custom_minimum_size = Vector2(30, 125)
+layout_mode = 2
+offset_right = 30.0
+offset_bottom = 125.0
+theme_override_styles/panel = SubResource("StyleBoxEmpty_4ag7w")
+
+[node name="Stats" type="Panel" parent="ProgContextGameItSelf/GameItSelf_Hflow_Center/GameItSelf_Hflow_Work/Stats_Value/Stats_Names"]
+custom_minimum_size = Vector2(30, 14)
+layout_mode = 2
+anchor_right = 1.0
+anchor_bottom = 0.111
+offset_bottom = 0.125
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_vertical = 0
+theme_override_styles/panel = SubResource("StyleBoxFlat_xaf6q")
+
+[node name="Label" type="Label" parent="ProgContextGameItSelf/GameItSelf_Hflow_Center/GameItSelf_Hflow_Work/Stats_Value/Stats_Names/Stats"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -13.0
+offset_top = -7.0
+offset_right = 12.0
+offset_bottom = 6.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+text = "Stats"
+label_settings = ExtResource("6_ted0d")
+
+[node name="Panel2" type="Panel" parent="ProgContextGameItSelf/GameItSelf_Hflow_Center/GameItSelf_Hflow_Work/Stats_Value/Stats_Names/Stats"]
+layout_mode = 2
+anchor_top = 1.012
+anchor_right = 1.0
+anchor_bottom = 8.171
+offset_top = -0.167999
+offset_right = 1.0
+offset_bottom = 4.606
+theme_override_styles/panel = SubResource("StyleBoxFlat_onv0q")
+
+[node name="Label" type="Label" parent="ProgContextGameItSelf/GameItSelf_Hflow_Center/GameItSelf_Hflow_Work/Stats_Value/Stats_Names/Stats/Panel2"]
+layout_mode = 2
+anchor_right = 1.0
+anchor_bottom = 0.99
+offset_left = 2.0
+offset_right = -1.0
+offset_bottom = 1.05
+size_flags_vertical = 0
+text = "STR
+CON
+DEX
+INT
+WIS
+CHA"
+label_settings = SubResource("LabelSettings_dqxwy")
+
+[node name="WIP" type="Panel" parent="ProgContextGameItSelf/GameItSelf_Hflow_Center/GameItSelf_Hflow_Work/Stats_Value/Stats_Names/Stats"]
+layout_mode = 0
+offset_top = 119.0
+offset_right = 66.0
+offset_bottom = 120.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_rskml")
+
+[node name="Stats_Values" type="Panel" parent="ProgContextGameItSelf/GameItSelf_Hflow_Center/GameItSelf_Hflow_Work/Stats_Value"]
+custom_minimum_size = Vector2(35, 125)
+layout_mode = 2
+offset_left = 30.0
+offset_right = 65.0
+offset_bottom = 125.0
+theme_override_styles/panel = SubResource("StyleBoxEmpty_ic4ln")
+
+[node name="Value" type="Panel" parent="ProgContextGameItSelf/GameItSelf_Hflow_Center/GameItSelf_Hflow_Work/Stats_Value/Stats_Values"]
+custom_minimum_size = Vector2(30, 14)
+layout_mode = 2
+anchor_right = 1.0
+anchor_bottom = 0.111
+offset_bottom = 0.125
+size_flags_vertical = 0
+theme_override_styles/panel = SubResource("StyleBoxFlat_xx240")
+
+[node name="Label" type="Label" parent="ProgContextGameItSelf/GameItSelf_Hflow_Center/GameItSelf_Hflow_Work/Stats_Value/Stats_Values/Value"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -13.5
+offset_top = -7.0
+offset_right = 13.5
+offset_bottom = 7.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+text = "Value"
+label_settings = ExtResource("6_ted0d")
+
+[node name="Panel3" type="Panel" parent="ProgContextGameItSelf/GameItSelf_Hflow_Center/GameItSelf_Hflow_Work/Stats_Value/Stats_Values/Value"]
+custom_minimum_size = Vector2(34, 0)
+layout_mode = 2
+offset_left = 1.0
+offset_top = 14.0
+offset_right = 35.0
+offset_bottom = 119.0
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_x0j8l")
+
+[node name="Stats_Value_Label" type="Label" parent="ProgContextGameItSelf/GameItSelf_Hflow_Center/GameItSelf_Hflow_Work/Stats_Value/Stats_Values/Value/Panel3"]
+unique_name_in_owner = true
+layout_mode = 2
+offset_left = 2.0
+offset_right = 33.0
+offset_bottom = 105.0
+size_flags_vertical = 0
+text = "1
+2
+3
+4
+5
+6"
+label_settings = SubResource("LabelSettings_e777u")
+
+[node name="Inv_Qty" type="Panel" parent="ProgContextGameItSelf/GameItSelf_Hflow_Center/GameItSelf_Hflow_Work"]
+custom_minimum_size = Vector2(185, 110)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_guqpg")
+
+[node name="Panel4" type="Panel" parent="ProgContextGameItSelf/GameItSelf_Hflow_Center/GameItSelf_Hflow_Work/Inv_Qty"]
+custom_minimum_size = Vector2(135, 88)
+layout_mode = 2
+anchor_right = 0.72973
+anchor_bottom = 0.8
+offset_bottom = -15.0
+theme_override_styles/panel = SubResource("StyleBoxEmpty_lxudd")
+metadata/_edit_use_anchors_ = true
+
+[node name="Inventory" type="Panel" parent="ProgContextGameItSelf/GameItSelf_Hflow_Center/GameItSelf_Hflow_Work/Inv_Qty/Panel4"]
+custom_minimum_size = Vector2(135, 14)
+layout_mode = 2
+anchor_right = 1.0
+anchor_bottom = 0.111
+offset_bottom = -0.045001
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme_override_styles/panel = SubResource("StyleBoxFlat_qqocq")
+
+[node name="Label" type="Label" parent="ProgContextGameItSelf/GameItSelf_Hflow_Center/GameItSelf_Hflow_Work/Inv_Qty/Panel4/Inventory"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -22.5
+offset_top = -7.0
+offset_right = 22.5
+offset_bottom = 6.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+text = "Inventory"
+label_settings = SubResource("LabelSettings_uqkww")
+
+[node name="Inventory" type="Panel" parent="ProgContextGameItSelf/GameItSelf_Hflow_Center/GameItSelf_Hflow_Work/Inv_Qty/Panel4/Inventory"]
+custom_minimum_size = Vector2(135, 0)
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 7.086
+offset_top = -0.83
+offset_bottom = -9.99938
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme_override_styles/panel = SubResource("StyleBoxFlat_oo46e")
+metadata/_edit_use_anchors_ = true
+
+[node name="Inventory_RichLabel" type="RichTextLabel" parent="ProgContextGameItSelf/GameItSelf_Hflow_Center/GameItSelf_Hflow_Work/Inv_Qty/Panel4/Inventory/Inventory"]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 3.0
+offset_top = 1.0
+offset_right = -1.00005
+offset_bottom = -0.0346222
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/normal_font = ExtResource("2_lchmn")
+theme_override_font_sizes/normal_font_size = 14
+bbcode_enabled = true
+text = "[color=black]Gold"
+
+[node name="Panel6" type="Panel" parent="ProgContextGameItSelf/GameItSelf_Hflow_Center/GameItSelf_Hflow_Work/Inv_Qty"]
+custom_minimum_size = Vector2(50, 88)
+layout_mode = 2
+anchor_left = 0.72973
+anchor_right = 1.0
+anchor_bottom = 0.8
+offset_bottom = -12.0
+theme_override_styles/panel = SubResource("StyleBoxEmpty_wn7hc")
+metadata/_edit_use_anchors_ = true
+
+[node name="Quantity" type="Panel" parent="ProgContextGameItSelf/GameItSelf_Hflow_Center/GameItSelf_Hflow_Work/Inv_Qty/Panel6"]
+custom_minimum_size = Vector2(49, 14)
+layout_mode = 2
+offset_right = 49.0
+offset_bottom = 14.0
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme_override_styles/panel = SubResource("StyleBoxFlat_25a0t")
+
+[node name="Label" type="Label" parent="ProgContextGameItSelf/GameItSelf_Hflow_Center/GameItSelf_Hflow_Work/Inv_Qty/Panel6/Quantity"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -21.5001
+offset_top = -7.0
+offset_right = 21.4999
+offset_bottom = 6.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+text = "Quantity"
+label_settings = SubResource("LabelSettings_ag5yh")
+
+[node name="Panel3" type="Panel" parent="ProgContextGameItSelf/GameItSelf_Hflow_Center/GameItSelf_Hflow_Work/Inv_Qty/Panel6/Quantity"]
+layout_mode = 0
+offset_top = 14.0
+offset_right = 50.0
+offset_bottom = 89.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_bc0op")
+
+[node name="Inv_Qty_RichLabel" type="Label" parent="ProgContextGameItSelf/GameItSelf_Hflow_Center/GameItSelf_Hflow_Work/Inv_Qty/Panel6/Quantity/Panel3"]
+unique_name_in_owner = true
+layout_mode = 2
+offset_left = 3.0
+offset_right = 49.0
+offset_bottom = 99.0
+size_flags_vertical = 0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_lchmn")
+theme_override_font_sizes/font_size = 14
+text = "111"
+
+[node name="Inv_Encum" type="Panel" parent="ProgContextGameItSelf/GameItSelf_Hflow_Center/GameItSelf_Hflow_Work/Inv_Qty"]
+custom_minimum_size = Vector2(0, 30)
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -31.0
+offset_bottom = -1.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_styles/panel = SubResource("StyleBoxFlat_ksp1t")
+
+[node name="MarginContainer" type="MarginContainer" parent="ProgContextGameItSelf/GameItSelf_Hflow_Center/GameItSelf_Hflow_Work/Inv_Qty/Inv_Encum"]
+layout_mode = 1
+offset_left = 1.0
+offset_top = 1.0
+offset_right = 68.0
+offset_bottom = 15.0
+theme_override_constants/margin_left = 2
+
+[node name="Encum_Label" type="Label" parent="ProgContextGameItSelf/GameItSelf_Hflow_Center/GameItSelf_Hflow_Work/Inv_Qty/Inv_Encum/MarginContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+text = "Encumbrance"
+label_settings = SubResource("LabelSettings_sd8cg")
+metadata/_edit_use_anchors_ = true
+
+[node name="Char_Level2" type="Panel" parent="ProgContextGameItSelf/GameItSelf_Hflow_Center/GameItSelf_Hflow_Work/Inv_Qty/Inv_Encum"]
+layout_mode = 2
+anchor_left = 0.005
+anchor_top = 0.467
+anchor_right = 0.995
+anchor_bottom = 0.964
+offset_left = 0.0749999
+offset_top = -0.0100002
+offset_right = -0.0750122
+offset_bottom = 0.0799999
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_ht5dw")
+
+[node name="MarginContainer" type="MarginContainer" parent="ProgContextGameItSelf/GameItSelf_Hflow_Center/GameItSelf_Hflow_Work/Inv_Qty/Inv_Encum/Char_Level2"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 2
+theme_override_constants/margin_top = 2
+theme_override_constants/margin_right = 2
+theme_override_constants/margin_bottom = 1
+
+[node name="Encum_Bar" type="ProgressBar" parent="ProgContextGameItSelf/GameItSelf_Hflow_Center/GameItSelf_Hflow_Work/Inv_Qty/Inv_Encum/Char_Level2/MarginContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 1
+theme_override_styles/background = SubResource("StyleBoxFlat_b5n0r")
+theme_override_styles/fill = SubResource("StyleBoxFlat_jabc6")
+max_value = 40.0
+step = 1.0
+rounded = true
+show_percentage = false
+
+[node name="WIP" type="Panel" parent="ProgContextGameItSelf/GameItSelf_Hflow_Center/GameItSelf_Hflow_Work/Inv_Qty"]
+layout_mode = 0
+offset_top = 119.0
+offset_right = 185.0
+offset_bottom = 120.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_rskml")
+
+[node name="Equipament_Panel" type="Panel" parent="ProgContextGameItSelf/GameItSelf_Hflow_Center/GameItSelf_Hflow_Work"]
+custom_minimum_size = Vector2(215, 120)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_6ebls")
+
+[node name="Equipament" type="Panel" parent="ProgContextGameItSelf/GameItSelf_Hflow_Center/GameItSelf_Hflow_Work/Equipament_Panel"]
+visible = false
+custom_minimum_size = Vector2(215, 13.83)
+layout_mode = 2
+anchor_right = 1.0
+anchor_bottom = 0.111
+offset_bottom = -0.045001
+size_flags_horizontal = 0
+size_flags_vertical = 0
+
+[node name="Label" type="Label" parent="ProgContextGameItSelf/GameItSelf_Hflow_Center/GameItSelf_Hflow_Work/Equipament_Panel/Equipament"]
+layout_mode = 2
+anchor_left = 0.012
+anchor_right = 0.675
+anchor_bottom = 0.94
+offset_left = -0.0323696
+offset_top = -1.0
+offset_right = -1.29974
+offset_bottom = -0.000200272
+size_flags_horizontal = 4
+text = "Equipament"
+label_settings = ExtResource("6_ted0d")
+
+[node name="Inventory" type="Panel" parent="ProgContextGameItSelf/GameItSelf_Hflow_Center/GameItSelf_Hflow_Work/Equipament_Panel/Equipament"]
+custom_minimum_size = Vector2(82.185, 0)
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 7.086
+offset_top = -0.83
+offset_bottom = 2.00062
+size_flags_horizontal = 0
+size_flags_vertical = 0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="ProgContextGameItSelf/GameItSelf_Hflow_Center/GameItSelf_Hflow_Work/Equipament_Panel/Equipament/Inventory"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.993
+anchor_bottom = 0.976
+offset_right = -138.495
+offset_bottom = 2.03999
+theme_override_font_sizes/normal_font_size = 10
+bbcode_enabled = true
+text = "First hand
+Second Hand"
+
+[node name="Equipament_RichLabel" type="RichTextLabel" parent="ProgContextGameItSelf/GameItSelf_Hflow_Center/GameItSelf_Hflow_Work/Equipament_Panel/Equipament/Inventory"]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.993
+anchor_bottom = 0.976
+offset_left = 85.0
+offset_right = 0.747986
+offset_bottom = 2.03999
+theme_override_font_sizes/normal_font_size = 10
+bbcode_enabled = true
+text = "bracelete maluco
+getulio vargas"
+
+[node name="Label" type="Label" parent="ProgContextGameItSelf/GameItSelf_Hflow_Center/GameItSelf_Hflow_Work/Equipament_Panel"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.35814
+anchor_top = 0.445833
+anchor_right = 0.64186
+anchor_bottom = 0.554167
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("2_lchmn")
+text = "Coming soon"
+horizontal_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Quest_Panel" type="Panel" parent="ProgContextGameItSelf/GameItSelf_Hflow_Center/GameItSelf_Hflow_Work"]
+visible = false
+custom_minimum_size = Vector2(125, 120)
+layout_mode = 2
+
+[node name="Quest" type="Panel" parent="ProgContextGameItSelf/GameItSelf_Hflow_Center/GameItSelf_Hflow_Work/Quest_Panel"]
+custom_minimum_size = Vector2(125, 13.83)
+layout_mode = 2
+offset_right = 125.0
+offset_bottom = 13.83
+size_flags_horizontal = 0
+size_flags_vertical = 0
+
+[node name="Label" type="Label" parent="ProgContextGameItSelf/GameItSelf_Hflow_Center/GameItSelf_Hflow_Work/Quest_Panel/Quest"]
+layout_mode = 2
+anchor_left = 0.012
+anchor_right = 0.675
+anchor_bottom = 0.94
+offset_left = -0.0323696
+offset_top = -1.0
+offset_right = -1.29974
+offset_bottom = -0.000200272
+size_flags_horizontal = 4
+text = "Quests"
+label_settings = ExtResource("6_ted0d")
+
+[node name="Inventory" type="Panel" parent="ProgContextGameItSelf/GameItSelf_Hflow_Center/GameItSelf_Hflow_Work/Quest_Panel/Quest"]
+custom_minimum_size = Vector2(82.185, 0)
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 7.086
+offset_top = -0.83
+offset_bottom = 2.00062
+size_flags_horizontal = 0
+size_flags_vertical = 0
+
+[node name="Quest_RichLabel" type="RichTextLabel" parent="ProgContextGameItSelf/GameItSelf_Hflow_Center/GameItSelf_Hflow_Work/Quest_Panel/Quest/Inventory"]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.993
+anchor_bottom = 0.976
+offset_right = -0.125
+offset_bottom = 2.088
+theme_override_font_sizes/normal_font_size = 10
+bbcode_enabled = true
+text = "[ ] Prologue"
+
+[node name="Skills_MP_Panel" type="Panel" parent="ProgContextGameItSelf/GameItSelf_Hflow_Center/GameItSelf_Hflow_Work"]
+visible = false
+custom_minimum_size = Vector2(155, 120)
+layout_mode = 2
+
+[node name="Skills_Panel" type="Panel" parent="ProgContextGameItSelf/GameItSelf_Hflow_Center/GameItSelf_Hflow_Work/Skills_MP_Panel"]
+custom_minimum_size = Vector2(125, 125)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Skills" type="Panel" parent="ProgContextGameItSelf/GameItSelf_Hflow_Center/GameItSelf_Hflow_Work/Skills_MP_Panel/Skills_Panel"]
+custom_minimum_size = Vector2(125, 13.83)
+layout_mode = 2
+offset_right = 125.0
+offset_bottom = 13.83
+size_flags_horizontal = 0
+size_flags_vertical = 0
+
+[node name="Label" type="Label" parent="ProgContextGameItSelf/GameItSelf_Hflow_Center/GameItSelf_Hflow_Work/Skills_MP_Panel/Skills_Panel/Skills"]
+layout_mode = 2
+anchor_left = 0.012
+anchor_right = 0.675
+anchor_bottom = 0.94
+offset_left = -0.0323696
+offset_top = -1.0
+offset_right = -1.29974
+offset_bottom = -0.000200272
+size_flags_horizontal = 4
+text = "Skills"
+label_settings = ExtResource("6_ted0d")
+
+[node name="Inventory" type="Panel" parent="ProgContextGameItSelf/GameItSelf_Hflow_Center/GameItSelf_Hflow_Work/Skills_MP_Panel/Skills_Panel/Skills"]
+custom_minimum_size = Vector2(82.185, 0)
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 7.086
+offset_top = -0.83
+offset_bottom = 2.00062
+size_flags_horizontal = 0
+size_flags_vertical = 0
+
+[node name="Skills_RichLabel" type="RichTextLabel" parent="ProgContextGameItSelf/GameItSelf_Hflow_Center/GameItSelf_Hflow_Work/Skills_MP_Panel/Skills_Panel/Skills/Inventory"]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.993
+anchor_bottom = 0.976
+offset_right = -0.125
+offset_bottom = 2.088
+theme_override_font_sizes/normal_font_size = 10
+bbcode_enabled = true
+text = "atirar fogo
+gelo frio"
+
+[node name="MP" type="Panel" parent="ProgContextGameItSelf/GameItSelf_Hflow_Center/GameItSelf_Hflow_Work/Skills_MP_Panel"]
+custom_minimum_size = Vector2(30, 125)
+layout_mode = 2
+offset_left = 125.0
+offset_right = 155.0
+offset_bottom = 125.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Skills" type="Panel" parent="ProgContextGameItSelf/GameItSelf_Hflow_Center/GameItSelf_Hflow_Work/Skills_MP_Panel/MP"]
+custom_minimum_size = Vector2(30, 13.83)
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+grow_horizontal = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+
+[node name="Label" type="Label" parent="ProgContextGameItSelf/GameItSelf_Hflow_Center/GameItSelf_Hflow_Work/Skills_MP_Panel/MP/Skills"]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 14.0
+grow_horizontal = 2
+size_flags_horizontal = 4
+text = "MP"
+label_settings = ExtResource("6_ted0d")
+
+[node name="Inventory" type="Panel" parent="ProgContextGameItSelf/GameItSelf_Hflow_Center/GameItSelf_Hflow_Work/Skills_MP_Panel/MP/Skills"]
+custom_minimum_size = Vector2(30, 0)
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 7.086
+offset_top = -0.83
+offset_bottom = 2.00062
+size_flags_horizontal = 0
+size_flags_vertical = 0
+
+[node name="MP_Skills_RichLabel" type="RichTextLabel" parent="ProgContextGameItSelf/GameItSelf_Hflow_Center/GameItSelf_Hflow_Work/Skills_MP_Panel/MP/Skills/Inventory"]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/normal_font_size = 10
+bbcode_enabled = true
+text = "100"
+
+[node name="GameItSelf_Progress_Center" type="VBoxContainer" parent="ProgContextGameItSelf"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 2.0
+offset_top = -1386.0
+offset_right = -2.0
+offset_bottom = -1335.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="Progress_Center_Panel" type="Panel" parent="ProgContextGameItSelf/GameItSelf_Progress_Center"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_styles/panel = SubResource("StyleBoxFlat_2duvy")
+
+[node name="Panel" type="Panel" parent="ProgContextGameItSelf/GameItSelf_Progress_Center/Progress_Center_Panel"]
+custom_minimum_size = Vector2(0, 27)
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_styles/panel = SubResource("StyleBoxFlat_ybr2j")
+
+[node name="MarginContainer" type="MarginContainer" parent="ProgContextGameItSelf/GameItSelf_Progress_Center/Progress_Center_Panel/Panel"]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -5.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/margin_left = 2
+theme_override_constants/margin_top = 0
+theme_override_constants/margin_right = 2
+theme_override_constants/margin_bottom = 2
+
+[node name="ItSelf_Progress_Center" type="ProgressBar" parent="ProgContextGameItSelf/GameItSelf_Progress_Center/Progress_Center_Panel/Panel/MarginContainer"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 23)
+layout_mode = 2
+size_flags_vertical = 1
+theme_override_styles/background = SubResource("StyleBoxFlat_b5t21")
+theme_override_styles/fill = SubResource("StyleBoxFlat_5iqkv")
+value = 12.45
+show_percentage = false
+
+[node name="ItSelf_Progress_Label" type="Label" parent="ProgContextGameItSelf/GameItSelf_Progress_Center/Progress_Center_Panel"]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.193
+anchor_bottom = 0.46
+offset_left = 2.0
+offset_top = 1.0
+offset_right = 2.72
+offset_bottom = 1.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_lchmn")
+theme_override_font_sizes/font_size = 26
+text = "dsadasdasdasdasdasdp"
+
+[node name="ProgContextGameOver" type="Panel" parent="."]
+unique_name_in_owner = true
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 6.10352e-05
+offset_bottom = 1335.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_r1i41")
+
+[node name="Label" type="Label" parent="ProgContextGameOver"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -94.5
+offset_top = 84.0
+offset_right = 94.5
+offset_bottom = 106.0
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("2_lchmn")
+theme_override_font_sizes/font_size = 26
+text = "Seu personagem morreu"
+
+[node name="GameOverButton" type="Button" parent="ProgContextGameOver"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -58.5
+offset_top = 135.0
+offset_right = 58.5
+offset_bottom = 164.0
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("2_lchmn")
+theme_override_font_sizes/font_size = 25
+text = "New character"
+
+[connection signal="sold_button_pressed" from="ProgContextStartGame" to="ProgContextGameItSelf" method="_on_sold_button_pressed"]
+[connection signal="pressed" from="ProgContextStartGame/StartGameMainHflow/MiscPanel/RandomNameButton" to="ProgContextStartGame" method="_on_random_name_pressed"]
+[connection signal="pressed" from="ProgContextStartGame/StartGameMainHflow/StatsPanel/SubStatsPanel/StatsVbox/Roll_Unroll_Panel/Roll_Button" to="ProgContextStartGame" method="_on_roll_button_pressed"]
+[connection signal="pressed" from="ProgContextStartGame/StartGameMainHflow/StatsPanel/SubStatsPanel/StatsVbox/Roll_Unroll_Panel/Unroll_Button" to="ProgContextStartGame" method="_on_unroll_button_pressed"]
+[connection signal="pressed" from="ProgContextStartGame/StartGame_Sold_Button/VBoxContainer/Sold_Button" to="ProgContextStartGame" method="_on_sold_button_pressed"]
+[connection signal="pressed" from="ProgContextGameOver/GameOverButton" to="ProgContextGameItSelf" method="_on_game_over_button_pressed"]

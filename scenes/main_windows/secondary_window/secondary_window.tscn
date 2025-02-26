@@ -1,0 +1,1440 @@
+[gd_scene load_steps=63 format=3 uid="uid://pxiwq4i2p8tb"]
+
+[ext_resource type="Script" path="res://scenes/main_windows/secondary_window/secondary_window.gd" id="1_tkinv"]
+[ext_resource type="Texture2D" uid="uid://cbha5lik4l4ru" path="res://assets/textures/secondary_window/grabber.png" id="3_2v6ab"]
+[ext_resource type="Script" path="res://scenes/main_windows/secondary_window/split/main_split.gd" id="3_kxmwt"]
+[ext_resource type="FontFile" uid="uid://dvjgk8polydkr" path="res://assets/styles/fonts/W95Font.ttf" id="4_fv8ka"]
+[ext_resource type="PackedScene" uid="uid://dtsitrbwpjd08" path="res://scenes/games_nodes/progress_context/progress_context.tscn" id="5_6jwjm"]
+[ext_resource type="PackedScene" uid="uid://xgx2ub3vhj15" path="res://scenes/games_nodes/arbitrary_dino/arbitrary_dino.tscn" id="5_7sw1t"]
+[ext_resource type="Script" path="res://scenes/main_windows/secondary_window/split/games_scroll_container.gd" id="5_gevev"]
+[ext_resource type="Texture2D" uid="uid://blha7xrlqom0j" path="res://assets/textures/secondary_window/progress_icon_store.png" id="5_hlh0n"]
+[ext_resource type="Texture2D" uid="uid://ox501uh2oabq" path="res://assets/textures/secondary_window/config_test.png" id="6_0u61q"]
+[ext_resource type="StyleBox" uid="uid://qom4qh85725s" path="res://assets/styles/themes/progress_buy_button.tres" id="6_d8gko"]
+[ext_resource type="Texture2D" uid="uid://cjrf12joyjv6s" path="res://assets/textures/secondary_window/test.png" id="6_kt3vf"]
+[ext_resource type="Script" path="res://scenes/main_windows/secondary_window/store/store_panel.gd" id="7_ge2l5"]
+[ext_resource type="Texture2D" uid="uid://cul2nkx5jq5hx" path="res://assets/textures/secondary_window/acensao_test.png" id="7_k80sc"]
+[ext_resource type="Texture2D" uid="uid://btp8ryblfi3a8" path="res://assets/textures/secondary_window/stats_info.png" id="7_nenyy"]
+[ext_resource type="FontFile" uid="uid://c85rxj6j18qfa" path="res://assets/styles/fonts/Tahoma.ttf" id="7_xwd7w"]
+[ext_resource type="Texture2D" uid="uid://cqmpi341equ7f" path="res://assets/textures/secondary_window/firstupgrade.png" id="8_4r1k8"]
+[ext_resource type="Texture2D" uid="uid://34xp6xp6pwq0" path="res://assets/textures/secondary_window/sound_arrastar.png" id="8_upba0"]
+[ext_resource type="Texture2D" uid="uid://cq8d2mdt7s02l" path="res://assets/textures/secondary_window/save_test.png" id="8_yxwrx"]
+[ext_resource type="Script" path="res://scenes/main_windows/secondary_window/temporary/sound_master.gd" id="9_bphwy"]
+[ext_resource type="Texture2D" uid="uid://drbwdv6qsmvuf" path="res://assets/textures/secondary_window/sound_config.png" id="10_6d0nc"]
+[ext_resource type="Texture2D" uid="uid://d3eirmbibw11q" path="res://assets/textures/secondary_window/progress_context_icon_store.png" id="11_xyl7f"]
+[ext_resource type="Texture2D" uid="uid://dh1ln4hpcisrf" path="res://assets/textures/secondary_window/intro_background.png" id="12_dkj5v"]
+[ext_resource type="Script" path="res://scenes/main_windows/secondary_window/intro/intro_panel.gd" id="13_fcf6f"]
+[ext_resource type="FontFile" uid="uid://dywsjlnr0d8eg" path="res://assets/styles/fonts/Boomboyah.ttf" id="13_uqu7e"]
+[ext_resource type="Script" path="res://scenes/main_windows/secondary_window/temporary/temporary_infopanel_script.gd" id="14_oig58"]
+[ext_resource type="Texture2D" uid="uid://ch7ricgid7ih1" path="res://assets/textures/secondary_window/pc_infestation.png" id="15_hn65d"]
+[ext_resource type="Texture2D" uid="uid://ddngbfyax2an2" path="res://assets/textures/secondary_window/acensao_disable.png" id="16_nt67j"]
+[ext_resource type="Texture2D" uid="uid://xd62nkgtp7uv" path="res://assets/textures/dino/dino.png" id="19_n4oaf"]
+[ext_resource type="Texture2D" uid="uid://bkhrmp753euvs" path="res://assets/textures/secondary_window/intro_text_spritesheet.png" id="22_k6n4r"]
+[ext_resource type="Script" path="res://scenes/main_windows/secondary_window/temporary/demo_finished.gd" id="30_wp7su"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xdab0"]
+bg_color = Color(0.262745, 0.54902, 0.901961, 1)
+border_width_top = 400
+border_width_bottom = 400
+border_color = Color(0.152941, 0.454902, 0.843137, 1)
+border_blend = true
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7bs73"]
+bg_color = Color(0.72549, 0.713726, 0.662745, 1)
+border_width_top = 3
+border_width_right = 3
+border_color = Color(0.501961, 0.501961, 0.501961, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dd8f6"]
+bg_color = Color(1, 1, 1, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jqlqh"]
+bg_color = Color(0.941176, 0.941176, 0.941176, 1)
+border_width_left = 1
+border_width_top = 1
+border_color = Color(0.627451, 0.627451, 0.627451, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_eju67"]
+bg_color = Color(0.941176, 0.941176, 0.941176, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ae3rx"]
+bg_color = Color(0, 0.470588, 0.843137, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_74wij"]
+bg_color = Color(0.091, 0.20755, 0.35, 1)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_o1ye5"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fn6s7"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ufwfl"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_x4wx1"]
+bg_color = Color(0, 0, 0, 0.862745)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dyyg2"]
+bg_color = Color(0.972549, 0.952941, 0.929412, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.5, 0.491, 0.48, 1)
+border_blend = true
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+anti_aliasing = false
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_x224l"]
+bg_color = Color(0.3864, 0.45444, 0.84, 0.862745)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_htmy7"]
+bg_color = Color(0, 0, 0, 0.862745)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lxxe3"]
+bg_color = Color(0.843137, 0.905882, 0.972549, 1)
+border_width_left = 3
+border_width_right = 3
+border_color = Color(0.686275, 0.803922, 0.94902, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4u7wm"]
+bg_color = Color(0.262745, 0.54902, 0.901961, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0.137255, 0.443137, 0.835294, 1)
+border_blend = true
+expand_margin_left = 3.0
+expand_margin_right = 3.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_a55ik"]
+bg_color = Color(0.843137, 0.905882, 0.972549, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0jrye"]
+bg_color = Color(0.513726, 0.717647, 1, 1)
+border_width_left = 150
+border_width_right = 150
+border_color = Color(0.843137, 0.905882, 0.972549, 1)
+border_blend = true
+expand_margin_top = 1.0
+expand_margin_bottom = 1.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_g237r"]
+bg_color = Color(0.262745, 0.54902, 0.901961, 1)
+border_width_left = 3
+border_width_top = 3
+border_color = Color(0.121569, 0.427451, 0.827451, 1)
+border_blend = true
+expand_margin_left = 3.0
+expand_margin_top = 3.0
+expand_margin_right = 3.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_kdb8d"]
+texture = ExtResource("12_dkj5v")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_w2nt1"]
+bg_color = Color(0.06, 0.0483, 0.021, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ga81u"]
+bg_color = Color(0.4, 0.0749333, 0.032, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_l5bsy"]
+bg_color = Color(0, 0, 0, 0.784314)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cxslb"]
+bg_color = Color(0.0918, 0.27, 0.15714, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.497474, 0.497474, 0.497473, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_grq8h"]
+bg_color = Color(0.0918, 0.27, 0.15714, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.497474, 0.497474, 0.497473, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_sulk7"]
+bg_color = Color(0.0918, 0.27, 0.15714, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.497474, 0.497474, 0.497473, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_r6mq8"]
+bg_color = Color(0.0918, 0.27, 0.15714, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.497474, 0.497474, 0.497473, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5i1yn"]
+bg_color = Color(0.0918, 0.27, 0.15714, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.497474, 0.497474, 0.497473, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_nothy"]
+bg_color = Color(0.0918, 0.27, 0.15714, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.497474, 0.497474, 0.497473, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_afnox"]
+bg_color = Color(0.0918, 0.27, 0.15714, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.497474, 0.497474, 0.497473, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_o5j8j"]
+bg_color = Color(0.0918, 0.27, 0.15714, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.497474, 0.497474, 0.497473, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lkty8"]
+bg_color = Color(0.0918, 0.27, 0.15714, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.497474, 0.497474, 0.497473, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[node name="SecondaryWindow" type="Control"]
+layout_mode = 3
+anchor_right = 5.12
+anchor_bottom = 2.88
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_tkinv")
+metadata/_edit_vertical_guides_ = [640.0]
+
+[node name="MainPanel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_xdab0")
+metadata/_edit_use_anchors_ = true
+
+[node name="MainHbox" type="HBoxContainer" parent="MainPanel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="MainSplit" type="HSplitContainer" parent="MainPanel/MainHbox"]
+unique_name_in_owner = true
+texture_filter = 1
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 0
+theme_override_constants/autohide = 0
+theme_override_icons/grabber = ExtResource("3_2v6ab")
+split_offset = 330
+script = ExtResource("3_kxmwt")
+
+[node name="LeftPanel" type="Panel" parent="MainPanel/MainHbox/MainSplit"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_styles/panel = SubResource("StyleBoxFlat_7bs73")
+
+[node name="GamesVbox" type="VBoxContainer" parent="MainPanel/MainHbox/MainSplit/LeftPanel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/separation = 0
+metadata/_edit_use_anchors_ = true
+
+[node name="MainProgressPanel" type="Panel" parent="MainPanel/MainHbox/MainSplit/LeftPanel/GamesVbox"]
+unique_name_in_owner = true
+visible = false
+texture_filter = 1
+custom_minimum_size = Vector2(0, 42)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_dd8f6")
+
+[node name="Progress_Text_Panel" type="Panel" parent="MainPanel/MainHbox/MainSplit/LeftPanel/GamesVbox/MainProgressPanel"]
+layout_mode = 2
+anchor_right = 0.998964
+anchor_bottom = 0.47619
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_vertical = 0
+theme_override_styles/panel = SubResource("StyleBoxFlat_jqlqh")
+metadata/_edit_use_anchors_ = true
+
+[node name="Pro_Text_Margin" type="MarginContainer" parent="MainPanel/MainHbox/MainSplit/LeftPanel/GamesVbox/MainProgressPanel/Progress_Text_Panel"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.05
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 3
+theme_override_constants/margin_top = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="ProgressText" type="RichTextLabel" parent="MainPanel/MainHbox/MainSplit/LeftPanel/GamesVbox/MainProgressPanel/Progress_Text_Panel/Pro_Text_Margin"]
+unique_name_in_owner = true
+texture_filter = 1
+custom_minimum_size = Vector2(0, 12.5)
+layout_mode = 2
+theme_override_fonts/normal_font = ExtResource("4_fv8ka")
+theme_override_font_sizes/normal_font_size = 18
+bbcode_enabled = true
+text = "[color=black]é o inicio de tudo, só você e eu por enquanto...[/color]"
+scroll_active = false
+tab_size = 1
+shortcut_keys_enabled = false
+meta_underlined = false
+hint_underlined = false
+deselect_on_focus_loss_enabled = false
+drag_and_drop_selection_enabled = false
+
+[node name="Progress_Panel" type="Panel" parent="MainPanel/MainHbox/MainSplit/LeftPanel/GamesVbox/MainProgressPanel"]
+layout_mode = 2
+anchor_top = 0.5
+anchor_right = 0.998964
+anchor_bottom = 0.97619
+size_flags_vertical = 0
+theme_override_styles/panel = SubResource("StyleBoxFlat_jqlqh")
+metadata/_edit_use_anchors_ = true
+
+[node name="Progress_Margin" type="MarginContainer" parent="MainPanel/MainHbox/MainSplit/LeftPanel/GamesVbox/MainProgressPanel/Progress_Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 2
+theme_override_constants/margin_top = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="ProgressBar" type="ProgressBar" parent="MainPanel/MainHbox/MainSplit/LeftPanel/GamesVbox/MainProgressPanel/Progress_Panel/Progress_Margin"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 1
+theme_override_styles/background = SubResource("StyleBoxFlat_eju67")
+theme_override_styles/fill = SubResource("StyleBoxFlat_ae3rx")
+value = 9.31
+show_percentage = false
+
+[node name="Progress_Add_Value" type="RichTextLabel" parent="MainPanel/MainHbox/MainSplit/LeftPanel/GamesVbox/MainProgressPanel/Progress_Panel"]
+unique_name_in_owner = true
+texture_filter = 1
+custom_minimum_size = Vector2(100, 15)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.396784
+anchor_top = -0.325
+anchor_right = 0.603216
+anchor_bottom = 1.375
+offset_left = 49.5
+offset_top = 7.5
+offset_right = -49.5
+offset_bottom = -7.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/normal_font = ExtResource("4_fv8ka")
+theme_override_font_sizes/normal_font_size = 22
+bbcode_enabled = true
+text = "[center][color=black]100[/color][/center]"
+scroll_active = false
+tab_size = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="GamesScrollContainer" type="ScrollContainer" parent="MainPanel/MainHbox/MainSplit/LeftPanel/GamesVbox"]
+layout_mode = 2
+size_flags_vertical = 3
+mouse_filter = 2
+vertical_scroll_mode = 3
+script = ExtResource("5_gevev")
+
+[node name="GamesPanelExtended" type="Panel" parent="MainPanel/MainHbox/MainSplit/LeftPanel/GamesVbox/GamesScrollContainer"]
+custom_minimum_size = Vector2(0, 1600)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_styles/panel = SubResource("StyleBoxFlat_74wij")
+
+[node name="GamesPanel" type="Panel" parent="MainPanel/MainHbox/MainSplit/LeftPanel/GamesVbox/GamesScrollContainer/GamesPanelExtended"]
+layout_mode = 2
+anchor_right = 1.008
+anchor_bottom = 0.448
+offset_right = 0.343994
+offset_bottom = 1197.2
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_vertical = 3
+theme_override_styles/panel = SubResource("StyleBoxEmpty_o1ye5")
+
+[node name="GamesSplit" type="VSplitContainer" parent="MainPanel/MainHbox/MainSplit/LeftPanel/GamesVbox/GamesScrollContainer/GamesPanelExtended/GamesPanel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -8.06403
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_vertical = 3
+
+[node name="FirstSplit" type="VSplitContainer" parent="MainPanel/MainHbox/MainSplit/LeftPanel/GamesVbox/GamesScrollContainer/GamesPanelExtended/GamesPanel/GamesSplit"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/autohide = 0
+
+[node name="ProgressContextPanel" type="Panel" parent="MainPanel/MainHbox/MainSplit/LeftPanel/GamesVbox/GamesScrollContainer/GamesPanelExtended/GamesPanel/GamesSplit/FirstSplit"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_styles/panel = SubResource("StyleBoxFlat_fn6s7")
+
+[node name="ProgressContextPanel" parent="MainPanel/MainHbox/MainSplit/LeftPanel/GamesVbox/GamesScrollContainer/GamesPanelExtended/GamesPanel/GamesSplit/FirstSplit/ProgressContextPanel" instance=ExtResource("5_6jwjm")]
+unique_name_in_owner = true
+visible = false
+clip_contents = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -0.0640259
+offset_bottom = 0.0
+metadata/_edit_vertical_guides_ = [934.0]
+
+[node name="ArbitraryDino" type="Panel" parent="MainPanel/MainHbox/MainSplit/LeftPanel/GamesVbox/GamesScrollContainer/GamesPanelExtended/GamesPanel/GamesSplit/FirstSplit"]
+custom_minimum_size = Vector2(0, 250)
+layout_mode = 2
+size_flags_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_ufwfl")
+
+[node name="ArbitraryDinoSubViewPort" type="SubViewportContainer" parent="MainPanel/MainHbox/MainSplit/LeftPanel/GamesVbox/GamesScrollContainer/GamesPanelExtended/GamesPanel/GamesSplit/FirstSplit/ArbitraryDino"]
+unique_name_in_owner = true
+visible = false
+texture_filter = 1
+layout_mode = 1
+offset_right = 973.0
+offset_bottom = 1720.0
+
+[node name="SubViewport" type="SubViewport" parent="MainPanel/MainHbox/MainSplit/LeftPanel/GamesVbox/GamesScrollContainer/GamesPanelExtended/GamesPanel/GamesSplit/FirstSplit/ArbitraryDino/ArbitraryDinoSubViewPort"]
+handle_input_locally = false
+canvas_item_default_texture_filter = 0
+size = Vector2i(973, 250)
+render_target_update_mode = 0
+
+[node name="ArbitraryDino" parent="MainPanel/MainHbox/MainSplit/LeftPanel/GamesVbox/GamesScrollContainer/GamesPanelExtended/GamesPanel/GamesSplit/FirstSplit/ArbitraryDino/ArbitraryDinoSubViewPort/SubViewport" instance=ExtResource("5_7sw1t")]
+unique_name_in_owner = true
+
+[node name="ConfigPanel" type="Panel" parent="MainPanel/MainHbox/MainSplit/LeftPanel"]
+unique_name_in_owner = true
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_x4wx1")
+
+[node name="SoundMasterLabel" type="Label" parent="MainPanel/MainHbox/MainSplit/LeftPanel/ConfigPanel"]
+layout_mode = 0
+offset_left = 436.0
+offset_top = 214.0
+offset_right = 544.0
+offset_bottom = 237.0
+theme_override_fonts/font = ExtResource("7_xwd7w")
+theme_override_font_sizes/font_size = 24
+text = "Sound Master"
+
+[node name="SoundMaster" type="VSlider" parent="MainPanel/MainHbox/MainSplit/LeftPanel/ConfigPanel"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.094
+anchor_bottom = 0.346
+offset_left = 437.0
+offset_top = 244.0
+offset_right = 437.29
+offset_bottom = 243.88
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_icons/grabber = ExtResource("8_upba0")
+theme_override_icons/grabber_highlight = ExtResource("8_upba0")
+theme_override_icons/grabber_disabled = ExtResource("8_upba0")
+theme_override_icons/tick = ExtResource("8_upba0")
+theme_override_styles/grabber_area = SubResource("StyleBoxFlat_dyyg2")
+max_value = 1.0
+step = 0.001
+value = 1.0
+scrollable = false
+script = ExtResource("9_bphwy")
+
+[node name="SoundMasterIcon" type="TextureRect" parent="MainPanel/MainHbox/MainSplit/LeftPanel/ConfigPanel"]
+layout_mode = 0
+offset_left = 396.0
+offset_top = 204.0
+offset_right = 436.0
+offset_bottom = 244.0
+texture = ExtResource("10_6d0nc")
+
+[node name="YouPanel" type="Panel" parent="MainPanel/MainHbox/MainSplit/LeftPanel"]
+unique_name_in_owner = true
+visible = false
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.515
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 0.199982
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_styles/panel = SubResource("StyleBoxFlat_x224l")
+
+[node name="TextureRect" type="TextureRect" parent="MainPanel/MainHbox/MainSplit/LeftPanel/YouPanel"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.169
+anchor_bottom = 0.467
+offset_right = -0.0850067
+offset_bottom = 0.0169983
+texture = ExtResource("15_hn65d")
+
+[node name="Label" type="Label" parent="MainPanel/MainHbox/MainSplit/LeftPanel/YouPanel"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.173057
+anchor_top = 0.0515759
+anchor_right = 0.26
+anchor_bottom = 0.201
+offset_right = 0.0999908
+offset_bottom = -0.149017
+theme_override_fonts/font = ExtResource("7_xwd7w")
+theme_override_font_sizes/font_size = 64
+text = "YOU"
+metadata/_edit_use_anchors_ = true
+
+[node name="Label2" type="Label" parent="MainPanel/MainHbox/MainSplit/LeftPanel/YouPanel"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.174093
+anchor_top = 0.277937
+anchor_right = 0.261036
+anchor_bottom = 0.427361
+offset_right = 0.0999908
+offset_bottom = -0.149017
+theme_override_fonts/font = ExtResource("7_xwd7w")
+theme_override_font_sizes/font_size = 64
+text = "Not implemented yet :/"
+metadata/_edit_use_anchors_ = true
+
+[node name="InfoPanel" type="Panel" parent="MainPanel/MainHbox/MainSplit/LeftPanel"]
+unique_name_in_owner = true
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_htmy7")
+
+[node name="Label" type="Label" parent="MainPanel/MainHbox/MainSplit/LeftPanel/InfoPanel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("7_xwd7w")
+theme_override_font_sizes/font_size = 24
+text = "Hi! I'm lostopkk, this is just a credit area to avoid future problems and thank those who helped me :)
+
+Creator: Lostopkk(Solo)
+Art: Lostopkk, Lucazed
+Dialogs: Ratib
+Sounds: Pixabay
+Tester: Kaik, Ratib, Viroul, Lucazed
+Support: Godot brasil community discord
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="RightPanel" type="Panel" parent="MainPanel/MainHbox/MainSplit"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_styles/panel = SubResource("StyleBoxFlat_lxxe3")
+script = ExtResource("7_ge2l5")
+
+[node name="StoreMargin" type="MarginContainer" parent="MainPanel/MainHbox/MainSplit/RightPanel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 3
+theme_override_constants/margin_right = 3
+metadata/_edit_use_anchors_ = true
+
+[node name="StoreVbox" type="VBoxContainer" parent="MainPanel/MainHbox/MainSplit/RightPanel/StoreMargin"]
+layout_mode = 2
+
+[node name="UpgradePanel" type="Panel" parent="MainPanel/MainHbox/MainSplit/RightPanel/StoreMargin/StoreVbox"]
+custom_minimum_size = Vector2(0, 150)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_4u7wm")
+
+[node name="GridContainer" type="HFlowContainer" parent="MainPanel/MainHbox/MainSplit/RightPanel/StoreMargin/StoreVbox/UpgradePanel"]
+visible = false
+layout_mode = 2
+anchor_top = 0.02
+anchor_right = 1.00334
+anchor_bottom = 0.98
+offset_right = -3.05176e-05
+metadata/_edit_use_anchors_ = true
+
+[node name="TextureRect" type="TextureRect" parent="MainPanel/MainHbox/MainSplit/RightPanel/StoreMargin/StoreVbox/UpgradePanel/GridContainer"]
+layout_mode = 2
+texture = ExtResource("8_4r1k8")
+stretch_mode = 2
+
+[node name="TextureRect2" type="TextureRect" parent="MainPanel/MainHbox/MainSplit/RightPanel/StoreMargin/StoreVbox/UpgradePanel/GridContainer"]
+visible = false
+layout_mode = 2
+texture = ExtResource("6_kt3vf")
+stretch_mode = 2
+
+[node name="TextureRect3" type="TextureRect" parent="MainPanel/MainHbox/MainSplit/RightPanel/StoreMargin/StoreVbox/UpgradePanel/GridContainer"]
+visible = false
+layout_mode = 2
+texture = ExtResource("6_kt3vf")
+stretch_mode = 2
+
+[node name="TextureRect4" type="TextureRect" parent="MainPanel/MainHbox/MainSplit/RightPanel/StoreMargin/StoreVbox/UpgradePanel/GridContainer"]
+visible = false
+layout_mode = 2
+texture = ExtResource("6_kt3vf")
+stretch_mode = 2
+
+[node name="TextureRect5" type="TextureRect" parent="MainPanel/MainHbox/MainSplit/RightPanel/StoreMargin/StoreVbox/UpgradePanel/GridContainer"]
+visible = false
+layout_mode = 2
+texture = ExtResource("6_kt3vf")
+stretch_mode = 2
+
+[node name="TextureRect6" type="TextureRect" parent="MainPanel/MainHbox/MainSplit/RightPanel/StoreMargin/StoreVbox/UpgradePanel/GridContainer"]
+visible = false
+layout_mode = 2
+texture = ExtResource("6_kt3vf")
+stretch_mode = 2
+
+[node name="TextureRect7" type="TextureRect" parent="MainPanel/MainHbox/MainSplit/RightPanel/StoreMargin/StoreVbox/UpgradePanel/GridContainer"]
+visible = false
+layout_mode = 2
+texture = ExtResource("6_kt3vf")
+stretch_mode = 2
+
+[node name="TextureRect8" type="TextureRect" parent="MainPanel/MainHbox/MainSplit/RightPanel/StoreMargin/StoreVbox/UpgradePanel/GridContainer"]
+visible = false
+layout_mode = 2
+texture = ExtResource("6_kt3vf")
+stretch_mode = 2
+
+[node name="TextureRect9" type="TextureRect" parent="MainPanel/MainHbox/MainSplit/RightPanel/StoreMargin/StoreVbox/UpgradePanel/GridContainer"]
+visible = false
+layout_mode = 2
+texture = ExtResource("6_kt3vf")
+stretch_mode = 2
+
+[node name="TextureRect10" type="TextureRect" parent="MainPanel/MainHbox/MainSplit/RightPanel/StoreMargin/StoreVbox/UpgradePanel/GridContainer"]
+visible = false
+layout_mode = 2
+texture = ExtResource("6_kt3vf")
+stretch_mode = 2
+
+[node name="TextureRect11" type="TextureRect" parent="MainPanel/MainHbox/MainSplit/RightPanel/StoreMargin/StoreVbox/UpgradePanel/GridContainer"]
+visible = false
+layout_mode = 2
+texture = ExtResource("6_kt3vf")
+stretch_mode = 2
+
+[node name="TextureRect12" type="TextureRect" parent="MainPanel/MainHbox/MainSplit/RightPanel/StoreMargin/StoreVbox/UpgradePanel/GridContainer"]
+visible = false
+layout_mode = 2
+texture = ExtResource("6_kt3vf")
+stretch_mode = 2
+
+[node name="TextureRect13" type="TextureRect" parent="MainPanel/MainHbox/MainSplit/RightPanel/StoreMargin/StoreVbox/UpgradePanel/GridContainer"]
+visible = false
+layout_mode = 2
+texture = ExtResource("6_kt3vf")
+stretch_mode = 2
+
+[node name="TextureRect14" type="TextureRect" parent="MainPanel/MainHbox/MainSplit/RightPanel/StoreMargin/StoreVbox/UpgradePanel/GridContainer"]
+visible = false
+layout_mode = 2
+texture = ExtResource("6_kt3vf")
+stretch_mode = 2
+
+[node name="TextureRect15" type="TextureRect" parent="MainPanel/MainHbox/MainSplit/RightPanel/StoreMargin/StoreVbox/UpgradePanel/GridContainer"]
+visible = false
+layout_mode = 2
+texture = ExtResource("6_kt3vf")
+stretch_mode = 2
+
+[node name="TextureRect16" type="TextureRect" parent="MainPanel/MainHbox/MainSplit/RightPanel/StoreMargin/StoreVbox/UpgradePanel/GridContainer"]
+visible = false
+layout_mode = 2
+texture = ExtResource("6_kt3vf")
+stretch_mode = 2
+
+[node name="TextureRect17" type="TextureRect" parent="MainPanel/MainHbox/MainSplit/RightPanel/StoreMargin/StoreVbox/UpgradePanel/GridContainer"]
+visible = false
+layout_mode = 2
+texture = ExtResource("6_kt3vf")
+stretch_mode = 2
+
+[node name="TextureRect18" type="TextureRect" parent="MainPanel/MainHbox/MainSplit/RightPanel/StoreMargin/StoreVbox/UpgradePanel/GridContainer"]
+visible = false
+layout_mode = 2
+texture = ExtResource("6_kt3vf")
+stretch_mode = 2
+
+[node name="Panel" type="Panel" parent="MainPanel/MainHbox/MainSplit/RightPanel/StoreMargin/StoreVbox/UpgradePanel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_htmy7")
+
+[node name="Label" type="Label" parent="MainPanel/MainHbox/MainSplit/RightPanel/StoreMargin/StoreVbox/UpgradePanel/Panel"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -11.1667
+offset_right = 20.0
+offset_bottom = 11.1667
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("7_xwd7w")
+text = "More to coming..."
+
+[node name="StorePanel" type="Panel" parent="MainPanel/MainHbox/MainSplit/RightPanel/StoreMargin/StoreVbox"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_styles/panel = SubResource("StyleBoxFlat_a55ik")
+
+[node name="StoreGamesVbox" type="VBoxContainer" parent="MainPanel/MainHbox/MainSplit/RightPanel/StoreMargin/StoreVbox/StorePanel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -2.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_vertical = 3
+theme_override_constants/separation = 1
+
+[node name="ProgressFriendButton" type="Button" parent="MainPanel/MainHbox/MainSplit/RightPanel/StoreMargin/StoreVbox/StorePanel/StoreGamesVbox"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 55)
+layout_mode = 2
+tooltip_text = "Se eu fosse você, teria medo dele."
+theme_override_styles/normal = ExtResource("6_d8gko")
+
+[node name="Icon" type="AspectRatioContainer" parent="MainPanel/MainHbox/MainSplit/RightPanel/StoreMargin/StoreVbox/StorePanel/StoreGamesVbox/ProgressFriendButton"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.029
+anchor_top = 0.255
+anchor_right = 0.184
+anchor_bottom = 0.696
+offset_left = 0.3
+offset_top = -0.0249996
+offset_right = -23.2
+offset_bottom = -12.28
+scale = Vector2(2, 2)
+mouse_filter = 2
+
+[node name="Progress_Icon" type="TextureRect" parent="MainPanel/MainHbox/MainSplit/RightPanel/StoreMargin/StoreVbox/StorePanel/StoreGamesVbox/ProgressFriendButton/Icon"]
+texture_filter = 1
+layout_mode = 2
+mouse_filter = 2
+texture = ExtResource("5_hlh0n")
+metadata/_edit_use_anchors_ = true
+
+[node name="PrimaryText" type="AspectRatioContainer" parent="MainPanel/MainHbox/MainSplit/RightPanel/StoreMargin/StoreVbox/StorePanel/StoreGamesVbox/ProgressFriendButton"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.226667
+anchor_top = 0.290909
+anchor_right = 0.76
+anchor_bottom = 0.6
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="Progress_Name" type="RichTextLabel" parent="MainPanel/MainHbox/MainSplit/RightPanel/StoreMargin/StoreVbox/StorePanel/StoreGamesVbox/ProgressFriendButton/PrimaryText"]
+texture_filter = 1
+clip_contents = false
+custom_minimum_size = Vector2(160, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+mouse_filter = 2
+theme_override_fonts/normal_font = ExtResource("4_fv8ka")
+theme_override_font_sizes/normal_font_size = 20
+bbcode_enabled = true
+text = "[color=202020][wave amp=20.0 freq=5.0 connected=1]Progress Friend"
+scroll_active = false
+tab_size = 0
+shortcut_keys_enabled = false
+
+[node name="SecondaryText" type="AspectRatioContainer" parent="MainPanel/MainHbox/MainSplit/RightPanel/StoreMargin/StoreVbox/StorePanel/StoreGamesVbox/ProgressFriendButton"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.226667
+anchor_top = 0.636364
+anchor_right = 0.76
+anchor_bottom = 0.927273
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="Progress_Friend_Quantity" type="RichTextLabel" parent="MainPanel/MainHbox/MainSplit/RightPanel/StoreMargin/StoreVbox/StorePanel/StoreGamesVbox/ProgressFriendButton/SecondaryText"]
+unique_name_in_owner = true
+texture_filter = 1
+custom_minimum_size = Vector2(160, 16)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+mouse_filter = 2
+theme_override_fonts/normal_font = ExtResource("4_fv8ka")
+theme_override_font_sizes/normal_font_size = 18
+bbcode_enabled = true
+text = "[center][color=404040]1"
+scroll_active = false
+tab_size = 0
+
+[node name="ThirdyText" type="AspectRatioContainer" parent="MainPanel/MainHbox/MainSplit/RightPanel/StoreMargin/StoreVbox/StorePanel/StoreGamesVbox/ProgressFriendButton"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.75
+anchor_top = 0.0181818
+anchor_right = 0.996667
+anchor_bottom = 0.981818
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="Progress_Friend_Value" type="RichTextLabel" parent="MainPanel/MainHbox/MainSplit/RightPanel/StoreMargin/StoreVbox/StorePanel/StoreGamesVbox/ProgressFriendButton/ThirdyText"]
+unique_name_in_owner = true
+texture_filter = 1
+custom_minimum_size = Vector2(66, 35)
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 4
+mouse_filter = 2
+theme_override_fonts/normal_font = ExtResource("4_fv8ka")
+theme_override_font_sizes/normal_font_size = 20
+bbcode_enabled = true
+text = "[center][color=202020]Value[/color]
+[color=600000]1000[/color]
+"
+scroll_active = false
+tab_size = 0
+shortcut_keys_enabled = false
+meta_underlined = false
+hint_underlined = false
+threaded = true
+deselect_on_focus_loss_enabled = false
+drag_and_drop_selection_enabled = false
+
+[node name="FirstSeparator" type="HSeparator" parent="MainPanel/MainHbox/MainSplit/RightPanel/StoreMargin/StoreVbox/StorePanel/StoreGamesVbox"]
+unique_name_in_owner = true
+visible = false
+custom_minimum_size = Vector2(295, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 0
+theme_override_constants/separation = 2
+theme_override_styles/separator = SubResource("StyleBoxFlat_0jrye")
+
+[node name="ProgressContextButton" type="Button" parent="MainPanel/MainHbox/MainSplit/RightPanel/StoreMargin/StoreVbox/StorePanel/StoreGamesVbox"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 55)
+layout_mode = 2
+tooltip_text = "A historia se basea em fatos reais."
+theme_override_styles/normal = ExtResource("6_d8gko")
+
+[node name="Icon" type="AspectRatioContainer" parent="MainPanel/MainHbox/MainSplit/RightPanel/StoreMargin/StoreVbox/StorePanel/StoreGamesVbox/ProgressContextButton"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.03
+anchor_top = 0.0181818
+anchor_right = 0.183333
+anchor_bottom = 1.0
+offset_right = -23.0
+offset_bottom = -27.0
+scale = Vector2(2, 2)
+mouse_filter = 2
+ratio = 0.8
+metadata/_edit_use_anchors_ = true
+
+[node name="Progress_Icon" type="TextureRect" parent="MainPanel/MainHbox/MainSplit/RightPanel/StoreMargin/StoreVbox/StorePanel/StoreGamesVbox/ProgressContextButton/Icon"]
+texture_filter = 1
+layout_mode = 2
+mouse_filter = 2
+texture = ExtResource("11_xyl7f")
+expand_mode = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="PrimaryText" type="AspectRatioContainer" parent="MainPanel/MainHbox/MainSplit/RightPanel/StoreMargin/StoreVbox/StorePanel/StoreGamesVbox/ProgressContextButton"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.226667
+anchor_top = 0.290909
+anchor_right = 0.76
+anchor_bottom = 0.6
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="Progress_Name" type="RichTextLabel" parent="MainPanel/MainHbox/MainSplit/RightPanel/StoreMargin/StoreVbox/StorePanel/StoreGamesVbox/ProgressContextButton/PrimaryText"]
+texture_filter = 1
+clip_contents = false
+custom_minimum_size = Vector2(160, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+mouse_filter = 2
+theme_override_fonts/normal_font = ExtResource("4_fv8ka")
+theme_override_font_sizes/normal_font_size = 20
+bbcode_enabled = true
+text = "[color=202020]Progress Context"
+scroll_active = false
+tab_size = 0
+shortcut_keys_enabled = false
+
+[node name="SecondaryText" type="AspectRatioContainer" parent="MainPanel/MainHbox/MainSplit/RightPanel/StoreMargin/StoreVbox/StorePanel/StoreGamesVbox/ProgressContextButton"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.226667
+anchor_top = 0.636364
+anchor_right = 0.763333
+anchor_bottom = 0.927273
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="Progress_Context_Quantity" type="RichTextLabel" parent="MainPanel/MainHbox/MainSplit/RightPanel/StoreMargin/StoreVbox/StorePanel/StoreGamesVbox/ProgressContextButton/SecondaryText"]
+unique_name_in_owner = true
+texture_filter = 1
+custom_minimum_size = Vector2(160, 16)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 4
+mouse_filter = 2
+theme_override_fonts/normal_font = ExtResource("4_fv8ka")
+theme_override_font_sizes/normal_font_size = 18
+bbcode_enabled = true
+text = "[center][color=404040]1"
+scroll_active = false
+tab_size = 0
+
+[node name="ThirdyText" type="AspectRatioContainer" parent="MainPanel/MainHbox/MainSplit/RightPanel/StoreMargin/StoreVbox/StorePanel/StoreGamesVbox/ProgressContextButton"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.75
+anchor_top = 0.0181818
+anchor_right = 0.996667
+anchor_bottom = 0.981818
+grow_horizontal = 0
+grow_vertical = 2
+mouse_filter = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="Progress_Context_Value" type="RichTextLabel" parent="MainPanel/MainHbox/MainSplit/RightPanel/StoreMargin/StoreVbox/StorePanel/StoreGamesVbox/ProgressContextButton/ThirdyText"]
+unique_name_in_owner = true
+texture_filter = 1
+custom_minimum_size = Vector2(66, 35)
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 4
+mouse_filter = 2
+theme_override_fonts/normal_font = ExtResource("4_fv8ka")
+theme_override_font_sizes/normal_font_size = 20
+bbcode_enabled = true
+text = "[center][color=202020]Value[/color]
+[color=600000]1000[/color]
+"
+scroll_active = false
+tab_size = 0
+shortcut_keys_enabled = false
+meta_underlined = false
+hint_underlined = false
+threaded = true
+deselect_on_focus_loss_enabled = false
+drag_and_drop_selection_enabled = false
+
+[node name="SecondSeparator" type="HSeparator" parent="MainPanel/MainHbox/MainSplit/RightPanel/StoreMargin/StoreVbox/StorePanel/StoreGamesVbox"]
+unique_name_in_owner = true
+visible = false
+custom_minimum_size = Vector2(295, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 0
+theme_override_constants/separation = 2
+theme_override_styles/separator = SubResource("StyleBoxFlat_0jrye")
+
+[node name="ArbitraryDinoButton" type="Button" parent="MainPanel/MainHbox/MainSplit/RightPanel/StoreMargin/StoreVbox/StorePanel/StoreGamesVbox"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 55)
+layout_mode = 2
+tooltip_text = "A historia se basea em fatos reais."
+theme_override_styles/normal = ExtResource("6_d8gko")
+
+[node name="Icon" type="AspectRatioContainer" parent="MainPanel/MainHbox/MainSplit/RightPanel/StoreMargin/StoreVbox/StorePanel/StoreGamesVbox/ArbitraryDinoButton"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.03
+anchor_right = 0.184
+anchor_bottom = 1.0
+offset_top = 1.0
+offset_right = -23.2
+offset_bottom = -27.0
+scale = Vector2(2, 2)
+mouse_filter = 2
+ratio = 0.8
+
+[node name="DinoIcon" type="TextureRect" parent="MainPanel/MainHbox/MainSplit/RightPanel/StoreMargin/StoreVbox/StorePanel/StoreGamesVbox/ArbitraryDinoButton/Icon"]
+texture_filter = 1
+layout_mode = 2
+mouse_filter = 2
+texture = ExtResource("19_n4oaf")
+expand_mode = 1
+stretch_mode = 5
+metadata/_edit_use_anchors_ = true
+
+[node name="PrimaryText" type="AspectRatioContainer" parent="MainPanel/MainHbox/MainSplit/RightPanel/StoreMargin/StoreVbox/StorePanel/StoreGamesVbox/ArbitraryDinoButton"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.227
+anchor_top = 0.291
+anchor_right = 0.763
+anchor_bottom = 0.6
+offset_left = -0.100006
+offset_top = -2.005
+offset_right = -0.900009
+offset_bottom = -2.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="Progress_Name" type="RichTextLabel" parent="MainPanel/MainHbox/MainSplit/RightPanel/StoreMargin/StoreVbox/StorePanel/StoreGamesVbox/ArbitraryDinoButton/PrimaryText"]
+texture_filter = 1
+clip_contents = false
+custom_minimum_size = Vector2(160, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+mouse_filter = 2
+theme_override_fonts/normal_font = ExtResource("4_fv8ka")
+theme_override_font_sizes/normal_font_size = 20
+bbcode_enabled = true
+text = "[color=202020]Arbitrary Dino"
+scroll_active = false
+tab_size = 0
+shortcut_keys_enabled = false
+
+[node name="SecondaryText" type="AspectRatioContainer" parent="MainPanel/MainHbox/MainSplit/RightPanel/StoreMargin/StoreVbox/StorePanel/StoreGamesVbox/ArbitraryDinoButton"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.227
+anchor_top = 0.636
+anchor_right = 0.763
+anchor_bottom = 0.927
+offset_left = -0.100006
+offset_top = 0.0199966
+offset_right = 0.0999908
+offset_bottom = 0.0149994
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="ArbitraryDino_Quantity" type="RichTextLabel" parent="MainPanel/MainHbox/MainSplit/RightPanel/StoreMargin/StoreVbox/StorePanel/StoreGamesVbox/ArbitraryDinoButton/SecondaryText"]
+unique_name_in_owner = true
+texture_filter = 1
+custom_minimum_size = Vector2(160, 16)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 4
+mouse_filter = 2
+theme_override_fonts/normal_font = ExtResource("4_fv8ka")
+theme_override_font_sizes/normal_font_size = 18
+bbcode_enabled = true
+text = "[center][color=404040]1"
+scroll_active = false
+tab_size = 0
+
+[node name="ThirdyText" type="AspectRatioContainer" parent="MainPanel/MainHbox/MainSplit/RightPanel/StoreMargin/StoreVbox/StorePanel/StoreGamesVbox/ArbitraryDinoButton"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.75
+anchor_top = 0.182
+anchor_right = 0.98
+anchor_bottom = 0.927
+offset_left = -1.52588e-05
+offset_top = -9.01
+offset_right = 5.0
+offset_bottom = 3.015
+grow_horizontal = 0
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="ArbitraryDino_Value" type="RichTextLabel" parent="MainPanel/MainHbox/MainSplit/RightPanel/StoreMargin/StoreVbox/StorePanel/StoreGamesVbox/ArbitraryDinoButton/ThirdyText"]
+unique_name_in_owner = true
+texture_filter = 1
+custom_minimum_size = Vector2(66, 35)
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 4
+mouse_filter = 2
+theme_override_fonts/normal_font = ExtResource("4_fv8ka")
+theme_override_font_sizes/normal_font_size = 20
+bbcode_enabled = true
+text = "[center][color=202020]Value[/color]
+[color=600000]1000[/color]
+"
+scroll_active = false
+tab_size = 0
+shortcut_keys_enabled = false
+meta_underlined = false
+hint_underlined = false
+threaded = true
+deselect_on_focus_loss_enabled = false
+drag_and_drop_selection_enabled = false
+
+[node name="ThirdSeparator" type="HSeparator" parent="MainPanel/MainHbox/MainSplit/RightPanel/StoreMargin/StoreVbox/StorePanel/StoreGamesVbox"]
+unique_name_in_owner = true
+visible = false
+custom_minimum_size = Vector2(295, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 0
+theme_override_constants/separation = 2
+theme_override_styles/separator = SubResource("StyleBoxFlat_0jrye")
+
+[node name="Soon" type="Panel" parent="MainPanel/MainHbox/MainSplit/RightPanel/StoreMargin/StoreVbox/StorePanel/StoreGamesVbox"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 55)
+layout_mode = 2
+tooltip_text = "A historia se basea em fatos reais."
+theme_override_styles/panel = SubResource("StyleBoxFlat_htmy7")
+
+[node name="Label" type="Label" parent="MainPanel/MainHbox/MainSplit/RightPanel/StoreMargin/StoreVbox/StorePanel/StoreGamesVbox/Soon"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -11.1667
+offset_right = 20.0
+offset_bottom = 11.1667
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("7_xwd7w")
+text = "Coming soon"
+
+[node name="InfoPanel" type="Panel" parent="MainPanel/MainHbox/MainSplit/RightPanel/StoreMargin/StoreVbox"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+size_flags_vertical = 4
+theme_override_styles/panel = SubResource("StyleBoxFlat_g237r")
+
+[node name="GridInfo" type="GridContainer" parent="MainPanel/MainHbox/MainSplit/RightPanel/StoreMargin/StoreVbox/InfoPanel"]
+layout_mode = 2
+anchor_left = -0.00668896
+anchor_top = -0.06
+anchor_right = 1.01003
+anchor_bottom = 1.0
+theme_override_constants/h_separation = 10
+columns = 5
+script = ExtResource("14_oig58")
+metadata/_edit_use_anchors_ = true
+
+[node name="ConfigSprite" type="TextureButton" parent="MainPanel/MainHbox/MainSplit/RightPanel/StoreMargin/StoreVbox/InfoPanel/GridInfo"]
+texture_filter = 1
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+tooltip_text = "Config"
+texture_normal = ExtResource("6_0u61q")
+stretch_mode = 5
+
+[node name="PCSprite" type="TextureButton" parent="MainPanel/MainHbox/MainSplit/RightPanel/StoreMargin/StoreVbox/InfoPanel/GridInfo"]
+texture_filter = 1
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+tooltip_text = "YOU"
+texture_normal = ExtResource("15_hn65d")
+stretch_mode = 5
+
+[node name="AcensaoSprite" type="TextureButton" parent="MainPanel/MainHbox/MainSplit/RightPanel/StoreMargin/StoreVbox/InfoPanel/GridInfo"]
+texture_filter = 1
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+tooltip_text = "Not implemented yet"
+disabled = true
+texture_normal = ExtResource("7_k80sc")
+texture_disabled = ExtResource("16_nt67j")
+stretch_mode = 5
+
+[node name="InfoSprite" type="TextureButton" parent="MainPanel/MainHbox/MainSplit/RightPanel/StoreMargin/StoreVbox/InfoPanel/GridInfo"]
+texture_filter = 1
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+tooltip_text = "Info"
+texture_normal = ExtResource("7_nenyy")
+stretch_mode = 5
+
+[node name="SaveSprite" type="TextureButton" parent="MainPanel/MainHbox/MainSplit/RightPanel/StoreMargin/StoreVbox/InfoPanel/GridInfo"]
+texture_filter = 1
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+tooltip_text = "Save"
+texture_normal = ExtResource("8_yxwrx")
+stretch_mode = 5
+
+[node name="IntroPanel" type="Panel" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_kdb8d")
+script = ExtResource("13_fcf6f")
+metadata/_edit_lock_ = true
+
+[node name="BoostInfestationSprite" type="Sprite2D" parent="IntroPanel"]
+unique_name_in_owner = true
+texture_filter = 1
+position = Vector2(640, 334)
+scale = Vector2(1.11111, 1)
+texture = ExtResource("22_k6n4r")
+hframes = 7
+vframes = 7
+
+[node name="IntroStartButton" type="Button" parent="IntroPanel"]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.402344
+anchor_top = 0.493056
+anchor_right = 0.597656
+anchor_bottom = 0.584722
+theme_override_fonts/font = ExtResource("4_fv8ka")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_w2nt1")
+theme_override_styles/normal = SubResource("StyleBoxFlat_ga81u")
+disabled = true
+metadata/_edit_use_anchors_ = true
+
+[node name="IntroRichButton" type="RichTextLabel" parent="IntroPanel/IntroStartButton"]
+unique_name_in_owner = true
+texture_filter = 1
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.567568
+anchor_top = 0.257143
+anchor_right = 0.966216
+anchor_bottom = 0.714286
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme_override_fonts/normal_font = ExtResource("13_uqu7e")
+theme_override_font_sizes/normal_font_size = 28
+bbcode_enabled = true
+text = "[shake rate=20.0 level=10 connected=1][center][color=c49e45][center]Remain[color=red] 50"
+scroll_active = false
+autowrap_mode = 0
+tab_size = 0
+shortcut_keys_enabled = false
+meta_underlined = false
+hint_underlined = false
+deselect_on_focus_loss_enabled = false
+drag_and_drop_selection_enabled = false
+metadata/_edit_use_anchors_ = true
+
+[node name="TextureRect" type="TextureRect" parent="IntroPanel/IntroStartButton"]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.236
+anchor_bottom = 1.0
+offset_right = 0.0719986
+mouse_filter = 2
+texture = ExtResource("15_hn65d")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="IntroPanel/IntroStartButton"]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.236
+anchor_top = 0.136364
+anchor_right = 0.56
+anchor_bottom = 0.909091
+mouse_filter = 2
+theme_override_fonts/normal_font = ExtResource("13_uqu7e")
+theme_override_font_sizes/normal_font_size = 21
+bbcode_enabled = true
+text = "[shake rate=20.0 level=10 connected=1][center][color=brown]beginning of everything"
+scroll_active = false
+shortcut_keys_enabled = false
+meta_underlined = false
+hint_underlined = false
+threaded = true
+deselect_on_focus_loss_enabled = false
+drag_and_drop_selection_enabled = false
+metadata/_edit_use_anchors_ = true
+
+[node name="DemoFinished" type="Panel" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_l5bsy")
+script = ExtResource("30_wp7su")
+
+[node name="Label" type="Label" parent="DemoFinished"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.292188
+anchor_top = 0.370833
+anchor_right = 0.707812
+anchor_bottom = 0.583333
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("7_xwd7w")
+theme_override_font_sizes/font_size = 24
+text = "Well that's the end of the demo, I hope you enjoyed it!
+There's still a lot to do, but I don't have much time to devote
+to it all the time, I hope you understand!
+send feedback at itch.io/doizelis, Thank you from the bottom of my heart for trying it out!"
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Button" type="Button" parent="DemoFinished"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.455078
+anchor_top = 0.611111
+anchor_right = 0.544922
+anchor_bottom = 0.654167
+offset_bottom = 3.05176e-05
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("7_xwd7w")
+theme_override_font_sizes/font_size = 24
+theme_override_styles/focus = SubResource("StyleBoxFlat_cxslb")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxFlat_grq8h")
+theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_sulk7")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxFlat_r6mq8")
+theme_override_styles/hover = SubResource("StyleBoxFlat_5i1yn")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxFlat_nothy")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_afnox")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxFlat_o5j8j")
+theme_override_styles/normal = SubResource("StyleBoxFlat_lkty8")
+text = "Back to game"
+metadata/_edit_use_anchors_ = true
+
+[connection signal="progress_context_purchased" from="." to="MainPanel/MainHbox/MainSplit/LeftPanel/GamesVbox/GamesScrollContainer" method="_on_secondary_window_progress_context_purchased"]
+[connection signal="dragged" from="MainPanel/MainHbox/MainSplit" to="MainPanel/MainHbox/MainSplit" method="_on_dragged"]
+[connection signal="value_changed" from="MainPanel/MainHbox/MainSplit/LeftPanel/ConfigPanel/SoundMaster" to="MainPanel/MainHbox/MainSplit/LeftPanel/ConfigPanel/SoundMaster" method="_on_value_changed"]
+[connection signal="pressed" from="MainPanel/MainHbox/MainSplit/RightPanel/StoreMargin/StoreVbox/StorePanel/StoreGamesVbox/ProgressFriendButton" to="." method="_on_progress_friend_button_pressed"]
+[connection signal="pressed" from="MainPanel/MainHbox/MainSplit/RightPanel/StoreMargin/StoreVbox/StorePanel/StoreGamesVbox/ProgressContextButton" to="." method="_on_progress_context_button_pressed"]
+[connection signal="pressed" from="MainPanel/MainHbox/MainSplit/RightPanel/StoreMargin/StoreVbox/StorePanel/StoreGamesVbox/ArbitraryDinoButton" to="." method="_on_arbitrary_dino_button_pressed"]
+[connection signal="pressed" from="MainPanel/MainHbox/MainSplit/RightPanel/StoreMargin/StoreVbox/InfoPanel/GridInfo/ConfigSprite" to="MainPanel/MainHbox/MainSplit/RightPanel/StoreMargin/StoreVbox/InfoPanel/GridInfo" method="_on_config_sprite_pressed"]
+[connection signal="pressed" from="MainPanel/MainHbox/MainSplit/RightPanel/StoreMargin/StoreVbox/InfoPanel/GridInfo/PCSprite" to="MainPanel/MainHbox/MainSplit/RightPanel/StoreMargin/StoreVbox/InfoPanel/GridInfo" method="_on_pc_sprite_pressed"]
+[connection signal="pressed" from="MainPanel/MainHbox/MainSplit/RightPanel/StoreMargin/StoreVbox/InfoPanel/GridInfo/InfoSprite" to="MainPanel/MainHbox/MainSplit/RightPanel/StoreMargin/StoreVbox/InfoPanel/GridInfo" method="_on_info_sprite_pressed"]
+[connection signal="pressed" from="MainPanel/MainHbox/MainSplit/RightPanel/StoreMargin/StoreVbox/InfoPanel/GridInfo/SaveSprite" to="MainPanel/MainHbox/MainSplit/RightPanel/StoreMargin/StoreVbox/InfoPanel/GridInfo" method="_on_save_sprite_pressed"]
+[connection signal="pressed" from="IntroPanel/IntroStartButton" to="IntroPanel" method="_on_intro_start_button_pressed"]
+[connection signal="pressed" from="DemoFinished/Button" to="DemoFinished" method="_on_button_pressed"]
